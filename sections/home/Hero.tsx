@@ -168,22 +168,25 @@ const Hero = () => {
                 The questions owners actually ask
               </h3>
               <ul className="space-y-3.5 text-[14px]">
-                {QNA_DATA.map((item, index) => (
-                  <li
-                    key={item.question}
-                    onClick={() => setActiveIdx(index)}
-                    className={`font-poppins text-[14px] cursor-pointer transition-all duration-200 flex items-start gap-2.5 ${
-                      activeIdx === index
-                        ? "font-semibold text-[#3CE0BF]"
-                        : "font-medium text-gray-500 hover:text-gray-700"
-                    }`}
-                  >
-                    <span className={`w-1.5 h-1.5 rounded-full mt-[7px] shrink-0 transition-all duration-200 ${
-                      activeIdx === index ? "bg-[#3CE0BF] scale-100" : "bg-transparent scale-0"
-                    }`} />
-                    <span>{item.question}</span>
-                  </li>
-                ))}
+                {QNA_DATA.map((item, index) => {
+                  const isActive = activeIdx === index;
+                  return (
+                    <li
+                      key={item.question}
+                      onClick={() => setActiveIdx(index)}
+                      className={`font-poppins text-[14px] cursor-pointer transition-all duration-200 relative pl-4 ${
+                        isActive
+                          ? "font-semibold text-[#3CE0BF]"
+                          : "font-medium text-gray-500 hover:text-gray-700"
+                      }`}
+                    >
+                      <span className={`absolute left-0 top-[7.5px] w-1.5 h-1.5 rounded-full bg-[#3CE0BF] transition-all duration-200 ${
+                        isActive ? "opacity-100 scale-100" : "opacity-0 scale-0"
+                      }`} />
+                      <span>{item.question}</span>
+                    </li>
+                  );
+                })}
               </ul>
             </div>
 
