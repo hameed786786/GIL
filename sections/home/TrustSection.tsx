@@ -6,7 +6,7 @@ const TrustSection = () => {
       {/* Background image */}
       <div className="absolute inset-0 z-0 pointer-events-none">
         <Image
-          src="/botbg.png"
+          src="/home/botbg.png"
           alt=""
           fill
           className="object-cover"
@@ -17,7 +17,7 @@ const TrustSection = () => {
       {/* Side Grids */}
       <div className="hidden md:block pointer-events-none absolute top-0 left-0 w-[70px] h-[1024px] z-10 select-none -scale-x-100">
         <Image
-          src="/sidegrid.svg"
+          src="/home/sidegrid.svg"
           alt=""
           fill
           className="object-contain"
@@ -25,7 +25,7 @@ const TrustSection = () => {
       </div>
       <div className="hidden md:block pointer-events-none absolute top-0 right-0 w-[70px] h-[1024px] z-10 select-none">
         <Image
-          src="/sidegrid.svg"
+          src="/home/sidegrid.svg"
           alt=""
           fill
           className="object-contain"

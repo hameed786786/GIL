@@ -17,70 +17,70 @@ const MODULES_DATA: ModuleData[] = [
     name: "Cost Structure Intelligence",
     title: "Where your money goes",
     description: "Every cost shown as a share of your income across eight areas, down to the individual ledger line, with anything quietly creeping up flagged in money — and what it is costing you a month.",
-    image: "/module_cost_structure.png"
+    image: "/home/module_cost_structure.png"
   },
   {
     id: "leakage",
     name: "Leakage",
     title: "Stop the waste",
     description: "Identify duplicate payments, unbilled hours, vendor overcharges, and subscription bloat automatically. Every leak is priced and ranked by effort to fix.",
-    image: "/module_cost_structure.png"
+    image: "/home/module_cost_structure.png"
   },
   {
     id: "forecasting",
     name: "Forecasting",
     title: "Look ahead with confidence",
     description: "Rolling 12-month cash flow and runway forecasts. GIL models realistic upside and downside scenarios based on live transaction velocity, not stale spreadsheets.",
-    image: "/module_cost_structure.png"
+    image: "/home/module_cost_structure.png"
   },
   {
     id: "decision-library",
     name: "The Decision Library",
     title: "Search past outcomes",
     description: "A structured repository of every past decision, its projected value, and its actual real-world outcome. Learn what works and build institutional memory.",
-    image: "/module_cost_structure.png"
+    image: "/home/module_cost_structure.png"
   },
   {
     id: "decision-ledger",
     name: "The Decision Ledger",
     title: "Track commitments in real-time",
     description: "Log every approved initiative, assigned owner, and target metric. GIL connects directly to your ledger to verify if the savings actually hit the bottom line.",
-    image: "/module_cost_structure.png"
+    image: "/home/module_cost_structure.png"
   },
   {
     id: "compliance",
     name: "Statutory Compliance",
     title: "Zero-stress filings",
     description: "Automated checks against local tax, payroll, and compliance laws. Flag anomalies before they become audits, penalties, or costly fees.",
-    image: "/module_cost_structure.png"
+    image: "/home/module_cost_structure.png"
   },
   {
     id: "governance",
     name: "Governance Score & Priority Stack",
     title: "Focus on what matters",
     description: "A dynamic, prioritized stack of financial issues ranked by urgency and financial impact. Your Governance Score shows your overall operational health at a glance.",
-    image: "/module_cost_structure.png"
+    image: "/home/module_cost_structure.png"
   },
   {
     id: "language",
     name: "The Language Engine",
     title: "Finance explained in plain words",
     description: "No complex jargon or raw tables. GIL's language engine translates complex accounting patterns into simple executive summaries you can act on immediately.",
-    image: "/module_cost_structure.png"
+    image: "/home/module_cost_structure.png"
   },
   {
     id: "kanban",
     name: "Kanban Intelligence",
     title: "Visual workflow for your money",
     description: "Track financial tasks, audit queries, and vendor negotiations through a familiar visual board. Keep teams aligned and tasks moving to completion.",
-    image: "/module_cost_structure.png"
+    image: "/home/module_cost_structure.png"
   },
   {
     id: "board-pack",
     name: "The Board Pack",
     title: "Investor-ready reporting",
     description: "Beautiful, comprehensive monthly board decks compiled automatically. High-level summaries for directors, detailed transaction logs for auditors.",
-    image: "/module_cost_structure.png"
+    image: "/home/module_cost_structure.png"
   }
 ];
 

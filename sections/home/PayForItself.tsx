@@ -5,22 +5,22 @@ import Image from "next/image";
 
 const metrics = [
   {
-    icon: "/icon5.svg",
+    icon: "/home/icon5.svg",
     label: "Money recovered",
     value: "1,830,000",
   },
   {
-    icon: "/icon6.svg",
+    icon: "/home/icon6.svg",
     label: "Recommendations acted on",
     value: "18 of 23",
   },
   {
-    icon: "/icon7.svg",
+    icon: "/home/icon7.svg",
     label: "Recovery Score",
     value: "23% → 71%",
   },
   {
-    icon: "/icon8.svg",
+    icon: "/home/icon8.svg",
     label: "Business getting stronger",
     value: "48 → 71",
   },

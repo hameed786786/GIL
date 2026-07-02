@@ -7,25 +7,25 @@ const WhoItsFor = () => {
   const cards = [
     {
       id: "owners",
-      icon: "/icon9.svg",
+      icon: "/home/icon9.svg",
       title: "Business owners",
       description: "One clear number and a short list of what to fix first — delivered where you already work."
     },
     {
       id: "cfos",
-      icon: "/icon10.svg",
+      icon: "/home/icon10.svg",
       title: "CFOs & finance leads",
       description: "A board pack by the 5th, early warnings before problems become crises, and the financial implication of every option on the table."
     },
     {
       id: "teams",
-      icon: "/icon11.svg",
+      icon: "/home/icon11.svg",
       title: "Finance teams",
       description: "Upload quickly and see at once what went wrong and what needs attention — no reports to build from scratch."
     },
     {
       id: "accountants",
-      icon: "/icon12.svg",
+      icon: "/home/icon12.svg",
       title: "Accountants & auditors",
       description: "Clean, time-stamped records and evidence, without weeks of chasing information."
     }

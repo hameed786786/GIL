@@ -304,7 +304,7 @@ const Hero = () => {
       <div className="hidden md:block py-[180px] relative w-full">
         {/* Background concentric circles SVG */}
         <Image 
-          src="/bg-circle.svg" 
+          src="/home/bg-circle.svg" 
           alt="" 
           width={1349}
           height={1349}
@@ -352,7 +352,7 @@ const Hero = () => {
       <div className="md:hidden py-[120px] relative w-full">
         {/* Background concentric circles SVG */}
         <Image 
-          src="/bg-circle.svg" 
+          src="/home/bg-circle.svg" 
           alt="" 
           width={1349}
           height={1349}

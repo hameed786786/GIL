@@ -12,7 +12,7 @@ const Footer = () => {
         <div className="flex flex-col items-start gap-3">
           <div className="w-[40px] h-[40px] relative">
             <Image
-              src="/logo.svg"
+              src="/home/logo.svg"
               alt="GIL Logo"
               fill
               className="object-contain"
@@ -53,7 +53,7 @@ const Footer = () => {
         <div className="flex flex-col items-start gap-2">
           <div className="w-[40px] h-[40px] relative">
             <Image
-              src="/logo.svg"
+              src="/home/logo.svg"
               alt="GIL Logo"
               fill
               className="object-contain"

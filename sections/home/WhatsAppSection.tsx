@@ -42,7 +42,7 @@ const WhatsAppSection = () => {
           <div className="absolute left-[843px] top-[-377px] w-[394px] h-[817px] z-20 pointer-events-none">
             <div className="relative w-full h-full">
               <Image
-                src="/phone.png"
+                src="/home/phone.png"
                 alt="Your business on WhatsApp screenshot"
                 fill
                 className="object-contain"
@@ -85,7 +85,7 @@ const WhatsAppSection = () => {
           {/* Phone Image Below Content */}
           <div className="w-full h-[480px] relative pointer-events-none mt-4">
             <Image
-              src="/phone.png"
+              src="/home/phone.png"
               alt="Your business on WhatsApp screenshot"
               fill
               className="object-contain"

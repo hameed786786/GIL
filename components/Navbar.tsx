@@ -9,6 +9,7 @@ interface NavLink {
 }
 
 const NAV_LINKS: NavLink[] = [
+  { label: "Home", href: "/" },
   { label: "Features", href: "/features" },
   { label: "Pricing", href: "/#pricing" },
   { label: "Why Us", href: "/#why-us" },
@@ -30,7 +31,7 @@ const Navbar = () => {
             {/* Logo */}
             <a href="/" aria-label="Home" className="flex shrink-0 items-center">
               <Image
-                src="/logo.svg"
+                src="/home/logo.svg"
                 alt="Logo"
                 width={36}
                 height={36}
@@ -95,7 +96,7 @@ const Navbar = () => {
             {/* Logo */}
             <a href="/" aria-label="Home" className="flex shrink-0 items-center">
               <Image
-                src="/logo.svg"
+                src="/home/logo.svg"
                 alt="Logo"
                 width={40}
                 height={40}

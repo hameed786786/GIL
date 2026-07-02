@@ -30,7 +30,7 @@ const HowItWorks = () => {
           {/* Step 1 */}
           <div className="flex flex-col items-start">
             <div className="w-[88px] h-[88px] flex items-center justify-center bg-white rounded-[12px] border border-gray-100 shadow-[0px_1px_7px_0px_rgba(0,0,0,0.16)] mb-6">
-              <Image src="/icon1.svg" alt="Read" width={46.66666793823242} height={46.66666793823242} className="object-cover" />
+              <Image src="/home/icon1.svg" alt="Read" width={46.66666793823242} height={46.66666793823242} className="object-cover" />
             </div>
             <span className="font-poppins font-bold text-[11px] tracking-wider text-[#3CE0BF] uppercase mb-2 block">
               Read
@@ -46,7 +46,7 @@ const HowItWorks = () => {
           {/* Step 2 */}
           <div className="flex flex-col items-start">
             <div className="w-[88px] h-[88px] flex items-center justify-center bg-white rounded-[12px] border border-gray-100 shadow-[0px_1px_7px_0px_rgba(0,0,0,0.16)] mb-6">
-              <Image src="/icon2.svg" alt="Understand" width={46.66666793823242} height={46.666667938232} className="object-cover" />
+              <Image src="/home/icon2.svg" alt="Understand" width={46.66666793823242} height={46.666667938232} className="object-cover" />
             </div>
             <span className="font-poppins font-bold text-[11px] tracking-wider text-[#3CE0BF] uppercase mb-2 block">
               Understand
@@ -62,7 +62,7 @@ const HowItWorks = () => {
           {/* Step 3 */}
           <div className="flex flex-col items-start">
             <div className="w-[88px] h-[88px] flex items-center justify-center bg-white rounded-[12px] border border-gray-100 shadow-[0px_1px_7px_0px_rgba(0,0,0,0.16)] mb-6">
-              <Image src="/icon3.svg" alt="Decide" width={46.66666793823242} height={46.66666793823242} className="object-cover" />
+              <Image src="/home/icon3.svg" alt="Decide" width={46.66666793823242} height={46.66666793823242} className="object-cover" />
             </div>
             <span className="font-poppins font-bold text-[11px] tracking-wider text-[#3CE0BF] uppercase mb-2 block">
               Decide
@@ -78,7 +78,7 @@ const HowItWorks = () => {
           {/* Step 4 */}
           <div className="flex flex-col items-start">
             <div className="w-[88px] h-[88px] flex items-center justify-center bg-white rounded-[12px] border border-gray-100 shadow-[0px_1px_7px_0px_rgba(0,0,0,0.16)] mb-6">
-              <Image src="/icon4.svg" alt="See the result" width={46.66666793823242} height={46.66666793823242} className="object-cover" />
+              <Image src="/home/icon4.svg" alt="See the result" width={46.66666793823242} height={46.66666793823242} className="object-cover" />
             </div>
             <span className="font-poppins font-bold text-[11px] tracking-wider text-[#3CE0BF] uppercase mb-2 block">
               See the result
@@ -117,7 +117,7 @@ const HowItWorks = () => {
           {/* Step 1 */}
           <div className="flex flex-col items-center text-center gap-3">
             <div className="w-[62px] h-[62px] flex-shrink-0 flex items-center justify-center bg-white rounded-[12px] border border-gray-100 shadow-[0px_1px_7px_0px_rgba(0,0,0,0.16)]">
-              <Image src="/icon1.svg" alt="Read" width={38} height={38} className="object-contain" />
+              <Image src="/home/icon1.svg" alt="Read" width={38} height={38} className="object-contain" />
             </div>
             <div className="flex flex-col gap-[5px]">
               <span className="font-poppins font-bold text-[11px] tracking-[0.08em] text-[#3CE0BF] uppercase">Read</span>
@@ -131,7 +131,7 @@ const HowItWorks = () => {
           {/* Step 2 */}
           <div className="flex flex-col items-center text-center gap-3">
             <div className="w-[62px] h-[62px] flex-shrink-0 flex items-center justify-center bg-white rounded-[12px] border border-gray-100 shadow-[0px_1px_7px_0px_rgba(0,0,0,0.16)]">
-              <Image src="/icon2.svg" alt="Understand" width={38} height={38} className="object-contain" />
+              <Image src="/home/icon2.svg" alt="Understand" width={38} height={38} className="object-contain" />
             </div>
             <div className="flex flex-col gap-[5px]">
               <span className="font-poppins font-bold text-[11px] tracking-[0.08em] text-[#3CE0BF] uppercase">Understand</span>
@@ -145,7 +145,7 @@ const HowItWorks = () => {
           {/* Step 3 */}
           <div className="flex flex-col items-center text-center gap-3">
             <div className="w-[62px] h-[62px] flex-shrink-0 flex items-center justify-center bg-white rounded-[12px] border border-gray-100 shadow-[0px_1px_7px_0px_rgba(0,0,0,0.16)]">
-              <Image src="/icon3.svg" alt="Decide" width={38} height={38} className="object-contain" />
+              <Image src="/home/icon3.svg" alt="Decide" width={38} height={38} className="object-contain" />
             </div>
             <div className="flex flex-col gap-[5px]">
               <span className="font-poppins font-bold text-[11px] tracking-[0.08em] text-[#3CE0BF] uppercase">Decide</span>
@@ -159,7 +159,7 @@ const HowItWorks = () => {
           {/* Step 4 */}
           <div className="flex flex-col items-center text-center gap-3">
             <div className="w-[62px] h-[62px] flex-shrink-0 flex items-center justify-center bg-white rounded-[12px] border border-gray-100 shadow-[0px_1px_7px_0px_rgba(0,0,0,0.16)]">
-              <Image src="/icon4.svg" alt="See the result" width={38} height={38} className="object-contain" />
+              <Image src="/home/icon4.svg" alt="See the result" width={38} height={38} className="object-contain" />
             </div>
             <div className="flex flex-col gap-[5px]">
               <span className="font-poppins font-bold text-[11px] tracking-[0.08em] text-[#3CE0BF] uppercase">See the result</span>

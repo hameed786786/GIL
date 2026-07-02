@@ -7,21 +7,21 @@ const PricingSection = () => {
   const cards = [
     {
       id: "establishing",
-      icon: "/icon13.svg",
+      icon: "/home/icon13.svg",
       tag: "Owner-led",
       title: "Establishing",
       description: "Smaller, owner-run businesses getting their first clear view — where the money goes, what is being lost, and what to do this month."
     },
     {
       id: "growing",
-      icon: "/icon14.svg",
+      icon: "/home/icon14.svg",
       tag: "Multi-location",
       title: "Growing",
       description: "Businesses across locations or entities that need forecasting, decision support, and a single view over the whole group."
     },
     {
       id: "established",
-      icon: "/icon15.svg",
+      icon: "/home/icon15.svg",
       tag: "Board-governed",
       title: "Established",
       description: "Larger businesses with boards and auditors, requiring risk oversight, deeper controls, and audit-ready records."
@@ -33,7 +33,7 @@ const PricingSection = () => {
       {/* Background Grid Image */}
       <div className="absolute inset-0 z-0 pointer-events-none opacity-40">
         <Image
-          src="/botbg.png"
+          src="/home/botbg.png"
           alt=""
           fill
           className="object-cover"
@@ -44,7 +44,7 @@ const PricingSection = () => {
       {/* Side Grids */}
       <div className="hidden md:block pointer-events-none absolute top-0 left-0 w-[70px] h-[1024px] z-10 select-none -scale-x-100">
         <Image
-          src="/sidegrid.svg"
+          src="/home/sidegrid.svg"
           alt=""
           fill
           className="object-contain"
@@ -52,7 +52,7 @@ const PricingSection = () => {
       </div>
       <div className="hidden md:block pointer-events-none absolute top-0 right-0 w-[70px] h-[1024px] z-10 select-none">
         <Image
-          src="/sidegrid.svg"
+          src="/home/sidegrid.svg"
           alt=""
           fill
           className="object-contain"

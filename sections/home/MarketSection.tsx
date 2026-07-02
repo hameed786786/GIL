@@ -5,10 +5,10 @@ import Image from "next/image";
 
 const MarketSection = () => {
   const markets = [
-    { name: "India", flag: "/india.svg" },
-    { name: "UAE", flag: "/united-arab-emirates.svg" },
-    { name: "Singapore", flag: "/singapore.svg" },
-    { name: "United Kingdom", flag: "/united-kingdom.svg" }
+    { name: "India", flag: "/home/india.svg" },
+    { name: "UAE", flag: "/home/united-arab-emirates.svg" },
+    { name: "Singapore", flag: "/home/singapore.svg" },
+    { name: "United Kingdom", flag: "/home/united-kingdom.svg" }
   ];
 
   return (
