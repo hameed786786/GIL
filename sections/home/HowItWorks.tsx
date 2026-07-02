@@ -38,7 +38,7 @@ const HowItWorks = () => {
             <h3 className="font-manrope font-bold text-[20px] text-[#0B2E2E] mb-3">
               Reads your data
             </h3>
-            <p className="font-poppins text-[14px] leading-relaxed text-gray-500">
+            <p className="font-poppins text-[14px] leading-relaxed text-[#757575] w-[302px]">
               Any file or export from any accounting system. GIL reads it and works out your numbers. Nothing to migrate.
             </p>
           </div>
@@ -54,7 +54,7 @@ const HowItWorks = () => {
             <h3 className="font-manrope font-bold text-[20px] text-[#0B2E2E] mb-3">
               Puts money on it
             </h3>
-            <p className="font-poppins text-[14px] leading-relaxed text-gray-500">
+            <p className="font-poppins text-[14px] leading-relaxed text-[#757575] w-[302px]">
               It puts a money figure on everything where your money goes, where it is being lost, what each issue is costing and says what that means in plain words.
             </p>
           </div>
@@ -70,7 +70,7 @@ const HowItWorks = () => {
             <h3 className="font-manrope font-bold text-[20px] text-[#0B2E2E] mb-3">
               Shows the right call
             </h3>
-            <p className="font-poppins text-[14px] leading-relaxed text-gray-500">
+            <p className="font-poppins text-[14px] leading-relaxed text-[#757575] w-[302px]">
               For every choice in front of you, GIL shows the financial implication of each option and the call it would make. You decide with the numbers in hand.
             </p>
           </div>
@@ -86,7 +86,7 @@ const HowItWorks = () => {
             <h3 className="font-manrope font-bold text-[20px] text-[#0B2E2E] mb-3">
               Proves the value
             </h3>
-            <p className="font-poppins text-[14px] leading-relaxed text-gray-500">
+            <p className="font-poppins text-[14px] leading-relaxed text-[#757575] w-[302px]">
               GIL measures what the decision was worth, so the value is something you can see, not something you assume.
             </p>
           </div>

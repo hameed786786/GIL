@@ -29,7 +29,7 @@ const PricingSection = () => {
   ];
 
   return (
-    <section className="relative w-full h-auto md:h-[781px] overflow-hidden py-12 md:py-0 bg-[#004944] text-white">
+    <section id="pricing" className="relative w-full h-auto md:h-[781px] overflow-hidden py-12 md:py-0 bg-[#004944] text-white">
       {/* Background Grid Image */}
       <div className="absolute inset-0 z-0 pointer-events-none opacity-40">
         <Image

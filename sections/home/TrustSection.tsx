@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const TrustSection = () => {
   return (
-    <section className="relative w-full bg-white overflow-hidden py-10 lg:py-18">
+    <section id="about" className="relative w-full bg-white overflow-hidden py-10 lg:py-18">
       {/* Background image */}
       <div className="absolute inset-0 z-0 pointer-events-none">
         <Image
