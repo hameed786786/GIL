@@ -4,6 +4,7 @@ import React from "react";
 import Hero from "@/sections/pricing/Hero";
 import PricingSection from "@/sections/pricing/PricingSection";
 import ComparePlans from "@/sections/pricing/ComparePlans";
+import FAQ from "@/sections/pricing/FAQ";
 import CTA from "@/components/CTA";
 
 export default function PricingPage() {
@@ -12,6 +13,7 @@ export default function PricingPage() {
       <Hero />
       <PricingSection />
       <ComparePlans />
+      <FAQ />
       <CTA 
         primaryButtonText="Get Started Free"
         secondaryButtonText="Schedule a Call"

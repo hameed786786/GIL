@@ -32,7 +32,7 @@ const WhoItsFor = () => {
   ];
 
   return (
-    <section id="why-us" className="relative w-full bg-white py-10 md:py-24 overflow-hidden">
+    <section id="why-us" className="relative w-full bg-white py-10 md:py-24 md:pt-0 overflow-hidden">
       {/* ================= DESKTOP VIEW ================= */}
       <div className="hidden md:block mx-auto max-w-[1340px] px-24">
         <div className="grid grid-cols-3 gap-10">

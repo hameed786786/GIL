@@ -324,25 +324,19 @@ const Hero = () => {
         />
 
         {/* Horizontal banner */}
-        <div className="relative w-full bg-[#004944] py-20 px-8 mb-10 overflow-hidden">
+        <div className="relative w-full  py-20 px-8 mb-10 overflow-hidden">
+          {/* Background Image */}
+          <div className="pointer-events-none absolute inset-0 z-10 w-full h-full">
+            <Image
+              src="/bgimg1.png"
+              alt=""
+              fill
+              className="object-cover"
+              priority
+            />
+          </div>
           {/* Subtle internal glow inside the banner */}
           <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(60,224,191,0.05)_0%,transparent_100%)]" />
-
-          {/* Left Side Glow */}
-          <div 
-            className="pointer-events-none absolute left-0 top-0 bottom-0 w-[400px]" 
-            style={{
-              background: 'radial-gradient(circle at left, rgba(60, 224, 191, 0.35) 0%, transparent 75%)'
-            }}
-          />
-
-          {/* Right Side Glow */}
-          <div 
-            className="pointer-events-none absolute right-0 top-0 bottom-0 w-[400px]" 
-            style={{
-              background: 'radial-gradient(circle at right, rgba(60, 224, 191, 0.35) 0%, transparent 75%)'
-            }}
-          />
 
           <div className="relative z-10 mx-auto max-w-[1165px] text-center">
             {/* Headline */}
@@ -373,6 +367,16 @@ const Hero = () => {
 
         {/* Horizontal banner */}
         <div className="relative w-full bg-[#004944] py-16 px-6 mb-10 overflow-hidden">
+          {/* Background Image */}
+          <div className="pointer-events-none absolute inset-0 -z-20 w-full h-full">
+            <Image
+              src="/bgimg1.png"
+              alt=""
+              fill
+              className="object-cover"
+              priority
+            />
+          </div>
           {/* Subtle internal glow inside the banner */}
           <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(60,224,191,0.05)_0%,transparent_100%)]" />
 

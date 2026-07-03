@@ -1,6 +1,7 @@
 'use client';
 
 import React from "react";
+import Image from "next/image";
 
 interface CTAProps {
   title?: string;
@@ -20,7 +21,18 @@ const CTA: React.FC<CTAProps> = ({
   secondaryButtonOnClick,
 }) => {
   return (
-    <section className="relative w-full overflow-hidden py-20 lg:py-24 bg-[radial-gradient(circle_at_center,#3CE0BF33_10%,#042623_120%)] text-[#0B2E2E] text-center">
+    <section className="relative w-full overflow-hidden py-20 lg:py-24 bg-[#E2F0EC] text-[#0B2E2E] text-center isolate">
+      {/* Background Image */}
+      <div className="pointer-events-none absolute inset-0 -z-20 w-full h-full">
+        <Image
+          src="/bgimg2.png"
+          alt=""
+          fill
+          className="object-cover"
+          priority
+        />
+      </div>
+
       {/* ================= DESKTOP VIEW ================= */}
       <div className="hidden md:flex flex-col items-center text-center mx-auto max-w-[1280px] px-6 lg:px-8 relative z-10">
         {/* Headline */}
@@ -38,7 +50,7 @@ const CTA: React.FC<CTAProps> = ({
           {/* Primary Button */}
           <button 
             onClick={primaryButtonOnClick}
-            className="bg-white text-[#0B2E2E] font-poppins font-medium text-[14.9px] leading-[100%] h-[35.209999084472656px] px-4 rounded-[6px] shadow-[0px_4px_12px_rgba(0,0,0,0.05)] hover:bg-gray-50 transition-colors duration-200 cursor-pointer"
+            className="bg-white/80 text-[#0B2E2E] font-poppins font-medium text-[14.9px] leading-[100%] h-[35.209999084472656px] px-4 rounded-[6px] shadow-[0px_4px_12px_rgba(0,0,0,0.05)] hover:bg-gray-50 transition-colors duration-200 cursor-pointer"
           >
             {primaryButtonText}
           </button>
