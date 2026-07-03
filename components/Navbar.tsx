@@ -73,13 +73,13 @@ const Navbar = () => {
               <div className="flex flex-col gap-3 border-t border-gray-100 pt-4">
                 <a
                   href="#login"
-                  className="w-full rounded-full bg-gray-100 px-5 py-2 text-center text-[15.9px] font-medium text-gray-800 hover:bg-gray-200"
+                  className="w-full rounded-full border border-gray-300 bg-white px-5 py-2 text-center text-[15.9px] font-medium text-gray-800 shadow-sm hover:bg-gray-50 hover:border-gray-400 transition-colors duration-150"
                 >
                   Log In
                 </a>
                 <a
                   href="#demo"
-                  className="w-full rounded-full bg-[#3CE0BF] px-5 py-2 text-center text-[15.9px] font-medium text-white hover:bg-emerald-500"
+                  className="w-full rounded-full border border-[#004944]/30 bg-[#3CE0BF] px-5 py-2 text-center text-[15.9px] font-medium text-gray-900 shadow-sm hover:bg-emerald-500 transition-colors duration-150"
                 >
                   Book a Demo
                 </a>
@@ -89,10 +89,10 @@ const Navbar = () => {
         </div>
 
         {/* ================= DESKTOP ================= */}
-        <div className="hidden md:flex items-center justify-between w-full px-5">
+        <div className="hidden md:flex items-center justify-between w-full px-5 py-2 rounded-full bg-white shadow-[0_4px_20px_rgba(0,0,0,0.05)] border border-gray-100/50">
 
-          {/* Left: Pill with Logo and Nav links */}
-          <div className="flex items-center rounded-full bg-white pl-3 pr-10 py-2 shadow-[0_4px_20px_rgba(0,0,0,0.05)] border border-gray-100/50">
+          {/* Left: Logo and Nav links */}
+          <div className="flex items-center pl-1">
             {/* Logo */}
             <a href="/" aria-label="Home" className="flex shrink-0 items-center">
               <Image
@@ -123,13 +123,13 @@ const Navbar = () => {
           <div className="flex items-center gap-3">
             <a
               href="#login"
-              className="flex items-center justify-center w-[81.52px] h-[44.21px] rounded-full border-t border-t-white bg-gray-100 text-[15.9px] font-medium text-gray-800 transition-colors duration-150 hover:bg-gray-200 whitespace-nowrap"
+              className="flex items-center justify-center w-[81.52px] h-[44.21px] rounded-full border border-gray-300 bg-white text-[15.9px] font-medium text-gray-800 shadow-sm transition-colors duration-150 hover:bg-gray-50 hover:border-gray-400 whitespace-nowrap cursor-pointer"
             >
               Log In
             </a>
             <a
               href="#demo"
-              className="flex items-center justify-center w-[135px] h-[44px] gap-[10px] rounded-full border-t border-t-white/30 bg-[#3CE0BF] px-[18px] py-[12px] text-[15.9px] font-medium text-gray-900 transition-colors duration-150 hover:bg-emerald-500 whitespace-nowrap"
+              className="flex items-center justify-center w-[135px] h-[44px] gap-[10px] rounded-full border border-[#004944]/30 bg-[#3CE0BF] px-[18px] py-[12px] text-[15.9px] font-medium text-gray-900 shadow-sm transition-colors duration-150 hover:bg-emerald-500 whitespace-nowrap cursor-pointer"
             >
               Book a Demo
             </a>

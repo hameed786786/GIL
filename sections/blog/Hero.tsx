@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const Hero = () => {
   return (
-    <section className="relative w-full overflow-hidden px-4 py-16 md:py-0 md:h-[350px] lg:px-8 flex flex-col justify-center items-center isolate">
+    <section className="relative w-full overflow-hidden px-4 py-16 pt-5 md:py-0 md:h-[350px] lg:px-8 flex flex-col justify-center items-center isolate">
       {/* Background botbg image */}
       <div className="pointer-events-none absolute bottom-0 left-0 right-0 w-full h-full -z-20">
         <Image
