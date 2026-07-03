@@ -15,7 +15,7 @@ const LanguageSection = () => {
   ];
 
   return (
-    <section className="relative w-full h-[504px] overflow-hidden py-4 bg-[#004944] text-white">
+    <section className="relative w-full h-[430px] md:h-[504px] overflow-hidden py-4 bg-[#004944] text-white">
       {/* Side Glows */}
       <div className="pointer-events-none absolute left-[-150px] top-1/2 -translate-y-1/2 w-[450px] h-[450px] rounded-full bg-[#3CE0BF]/20 blur-[100px] z-0" />
       <div className="pointer-events-none absolute right-[-150px] top-1/2 -translate-y-1/2 w-[450px] h-[450px] rounded-full bg-[#3CE0BF]/20 blur-[100px] z-0" />

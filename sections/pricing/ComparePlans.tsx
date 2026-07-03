@@ -44,7 +44,7 @@ const DashIcon = () => (
 );
 
 const Cell = ({ value, shaded }: { value: CellValue; shaded: boolean }) => {
-  const base = `flex items-center justify-center h-full px-3 py-3.5 ${shaded ? "bg-[#F5F6F6]" : "bg-white"}`;
+  const base = `flex items-center justify-center h-[55.35px] w-[300px] rounded-[6px] ${shaded ? "bg-[#EFF2F1]" : "bg-transparent"}`;
 
   if (value === "check") return <div className={base}><CheckIcon /></div>;
   if (value === "dash") return <div className={base}><DashIcon /></div>;
@@ -53,7 +53,33 @@ const Cell = ({ value, shaded }: { value: CellValue; shaded: boolean }) => {
   const isNumber = /^\d/.test(value);
   return (
     <div className={base}>
-      <span className={`font-poppins font-normal text-[13px] leading-tight text-center ${isNumber ? "text-[#004944] font-semibold" : "text-[#3BB89A]"}`}>
+      <span className={`font-inter text-[16.34px] leading-tight text-center ${isNumber ? "text-[#004944] font-semibold" : "text-[#0F5D51] font-semibold"}`}>
+        {value}
+      </span>
+    </div>
+  );
+};
+
+const MobileCheckIcon = () => (
+  <svg width="10" height="10" viewBox="0 0 18 18" fill="none" className="mx-auto">
+    <path d="M3.5 9.5L7.5 13L14.5 5" stroke="#3CE0BF" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
+  </svg>
+);
+
+const MobileDashIcon = () => (
+  <span className="block text-center text-[#BDBDBD] text-[10px] leading-none select-none">—</span>
+);
+
+const MobileCell = ({ value, shaded }: { value: CellValue; shaded: boolean }) => {
+  const base = `flex items-center justify-center h-full px-1 py-1.5 ${shaded ? "bg-[#F5F6F6]" : "bg-white"}`;
+
+  if (value === "check") return <div className={base}><MobileCheckIcon /></div>;
+  if (value === "dash") return <div className={base}><MobileDashIcon /></div>;
+
+  const isNumber = /^\d/.test(value);
+  return (
+    <div className={base}>
+      <span className={`font-poppins font-normal text-[8px] leading-tight text-center ${isNumber ? "text-[#004944] font-semibold" : "text-[#3BB89A]"}`}>
         {value}
       </span>
     </div>
@@ -62,9 +88,9 @@ const Cell = ({ value, shaded }: { value: CellValue; shaded: boolean }) => {
 
 const ComparePlans = () => {
   return (
-    <section className="relative w-full bg-white py-16 md:py-20">
+    <section className="relative w-full bg-white py-10 md:py-20 md:pt-0">
       {/* ================= DESKTOP VIEW ================= */}
-      <div className="hidden md:block mx-auto max-w-[900px] px-8">
+      <div className="hidden md:block mx-auto max-w-[1440px] px-16">
         {/* Heading */}
         <div className="text-center mb-12">
           <h2 className="font-manrope font-medium text-[42px] leading-tight tracking-[-0.5px] text-[#004944] mb-3">
@@ -75,35 +101,35 @@ const ComparePlans = () => {
           </p>
         </div>
 
-        {/* Table */}
-        <div className="w-full rounded-[16px] overflow-hidden border border-[#E5E7EB]">
+        {/* Table (no outer borders, columns spaced with gap-x-5) */}
+        <div className="w-full flex flex-col gap-2">
           {/* Column Headers */}
-          <div className="grid grid-cols-[2fr_1fr_1fr_1fr]">
-            <div className="px-6 py-4 bg-white">
-              <span className="font-poppins font-semibold text-[14px] text-[#004944]">Feature</span>
+          <div className="grid grid-cols-[1fr_329px_329px_329px] gap-x-2 items-center">
+            <div className="ml-20 py-10">
+              <span className="font-poppins font-bold text-[24px] text-[#004944] w-auto">Feature</span>
             </div>
             {["Starter", "Growth", "Enterprise"].map((col) => (
-              <div key={col} className="px-3 py-4 bg-white text-center border-l border-[#E5E7EB]">
-                <span className="font-poppins font-semibold text-[14px] text-[#3CE0BF]">{col}</span>
+              <div key={col} className="py-10 text-center w-[329px]">
+                <span className="font-poppins font-bold text-[24px] text-[#004944]">{col}</span>
               </div>
             ))}
           </div>
 
           {/* Rows */}
           {ROWS.map((row, idx) => {
-            const shaded = idx % 2 !== 0;
+            const shaded = idx % 2 === 0; // Alternating rows shaded (Best For is index 0 - shaded)
             return (
               <div
                 key={row.feature}
-                className={`grid grid-cols-[2fr_1fr_1fr_1fr] border-t border-[#E5E7EB] ${shaded ? "bg-[#F5F6F6]" : "bg-white"}`}
+                className="grid grid-cols-[1fr_329px_329px_329px] gap-x-0 items-center"
               >
-                {/* Feature label */}
-                <div className={`px-6 py-3.5 flex items-center ${shaded ? "bg-[#F5F6F6]" : "bg-white"}`}>
-                  <span className="font-poppins font-normal text-[13.5px] text-[#1A1A1A]">{row.feature}</span>
+                {/* Feature label (plain text, no bg) */}
+                <div className="pl-8 py-2 flex items-center h-[65.35px]">
+                  <span className="font-poppins font-semibold text-[19.06px] text-black">{row.feature}</span>
                 </div>
-                {/* Plan cells */}
+                {/* Plan cells (with rounded background blocks) */}
                 {[row.starter, row.growth, row.enterprise].map((val, ci) => (
-                  <div key={ci} className="border-l border-[#E5E7EB]">
+                  <div key={ci} className="flex justify-center items-center w-[329px]">
                     <Cell value={val} shaded={shaded} />
                   </div>
                 ))}
@@ -114,9 +140,9 @@ const ComparePlans = () => {
       </div>
 
       {/* ================= MOBILE VIEW ================= */}
-      <div className="md:hidden px-5">
+      <div className="md:hidden px-3">
         {/* Heading */}
-        <div className="text-center mb-8">
+        <div className="text-center mb-6">
           <h2 className="font-manrope font-medium text-[20px] leading-[28px] text-[#004944] mb-2">
             Compare Plans
           </h2>
@@ -125,41 +151,39 @@ const ComparePlans = () => {
           </p>
         </div>
 
-        {/* Scrollable Table */}
-        <div className="w-full overflow-x-auto rounded-[14px] border border-[#E5E7EB]">
-          <div className="min-w-[560px]">
-            {/* Column Headers */}
-            <div className="grid grid-cols-[1.8fr_1fr_1fr_1fr]">
-              <div className="px-4 py-3 bg-white">
-                <span className="font-poppins font-semibold text-[12px] text-[#004944]">Feature</span>
-              </div>
-              {["Starter", "Growth", "Enterprise"].map((col) => (
-                <div key={col} className="px-2 py-3 bg-white text-center border-l border-[#E5E7EB]">
-                  <span className="font-poppins font-semibold text-[12px] text-[#3CE0BF]">{col}</span>
-                </div>
-              ))}
+        {/* Scaled down Table (no horizontal scroll) */}
+        <div className="w-full rounded-[10px] border border-[#E5E7EB] overflow-hidden">
+          {/* Column Headers */}
+          <div className="grid grid-cols-[1.6fr_1fr_1fr_1fr]">
+            <div className="px-2 py-2 bg-white flex items-center">
+              <span className="font-poppins font-semibold text-[10px] text-[#004944]">Feature</span>
             </div>
-
-            {/* Rows */}
-            {ROWS.map((row, idx) => {
-              const shaded = idx % 2 !== 0;
-              return (
-                <div
-                  key={row.feature}
-                  className={`grid grid-cols-[1.8fr_1fr_1fr_1fr] border-t border-[#E5E7EB] ${shaded ? "bg-[#F5F6F6]" : "bg-white"}`}
-                >
-                  <div className={`px-4 py-3 flex items-center ${shaded ? "bg-[#F5F6F6]" : "bg-white"}`}>
-                    <span className="font-poppins font-normal text-[12px] text-[#1A1A1A]">{row.feature}</span>
-                  </div>
-                  {[row.starter, row.growth, row.enterprise].map((val, ci) => (
-                    <div key={ci} className="border-l border-[#E5E7EB]">
-                      <Cell value={val} shaded={shaded} />
-                    </div>
-                  ))}
-                </div>
-              );
-            })}
+            {["Starter", "Growth", "Enterprise"].map((col) => (
+              <div key={col} className="px-1 py-2 bg-white text-center border-l border-[#E5E7EB] flex items-center justify-center">
+                <span className="font-poppins font-semibold text-[10px] text-[#3CE0BF]">{col}</span>
+              </div>
+            ))}
           </div>
+
+          {/* Rows */}
+          {ROWS.map((row, idx) => {
+            const shaded = idx % 2 !== 0;
+            return (
+              <div
+                key={row.feature}
+                className={`grid grid-cols-[1.6fr_1fr_1fr_1fr] border-t border-[#E5E7EB] ${shaded ? "bg-[#F5F6F6]" : "bg-white"}`}
+              >
+                <div className={`px-2 py-2 flex items-center ${shaded ? "bg-[#F5F6F6]" : "bg-white"}`}>
+                  <span className="font-poppins font-normal text-[8.5px] leading-tight text-[#1A1A1A]">{row.feature}</span>
+                </div>
+                {[row.starter, row.growth, row.enterprise].map((val, ci) => (
+                  <div key={ci} className="border-l border-[#E5E7EB]">
+                    <MobileCell value={val} shaded={shaded} />
+                  </div>
+                ))}
+              </div>
+            );
+          })}
         </div>
       </div>
     </section>
