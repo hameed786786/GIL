@@ -9,7 +9,7 @@ import WhoItsFor from "@/sections/home/WhoItsFor";
 import LanguageSection from "@/sections/home/LanguageSection";
 import PricingSection from "@/sections/home/PricingSection";
 import MarketSection from "@/sections/home/MarketSection";
-import DemoSection from "@/sections/home/DemoSection";
+import CTA from "@/components/CTA";
 
 export default function HomePage() {
   return (
@@ -24,7 +24,7 @@ export default function HomePage() {
       <LanguageSection />
       <PricingSection />
       <MarketSection />
-      <DemoSection />
+      <CTA />
     </>
   );
 }

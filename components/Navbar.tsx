@@ -11,8 +11,8 @@ interface NavLink {
 const NAV_LINKS: NavLink[] = [
   { label: "Home", href: "/" },
   { label: "Features", href: "/features" },
-  { label: "Pricing", href: "/#pricing" },
-  { label: "Why Us", href: "/#why-us" },
+  { label: "Pricing", href: "/pricing" },
+  { label: "Why Us", href: "/why-us" },
   { label: "About us", href: "/#about" },
   { label: "Blog", href: "/#blog" },
 ];
@@ -21,7 +21,7 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="w-full px-4 py-4 md:px-[70px] sm:px-6 lg:px-[70px]">
+    <header className="w-full px-4 py-3 md:px-[70px] sm:px-6 lg:px-[70px]">
       <div className="relative mx-auto w-full">
 
         {/* ================= MOBILE ================= */}

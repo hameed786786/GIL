@@ -64,9 +64,9 @@ const FeaturesGrid = () => {
   ];
 
   return (
-    <section className="relative w-full bg-white py-16 md:py-24 overflow-hidden">
+    <section className="relative w-full bg-white py-4 md:py-14 overflow-hidden">
       {/* ================= DESKTOP VIEW ================= */}
-      <div className="hidden md:flex mx-auto max-w-[1280px] px-6 lg:px-8 flex-col items-center w-full">
+      <div className="hidden md:flex mx-auto max-w-[1280px] px-2 flex-col items-center w-full">
         {/* Title & Subtitle */}
         <div className="text-center mb-16 max-w-[850px]">
           <h2 className="font-manrope font-bold text-[48px] leading-[1.2] text-[#004944]">
@@ -78,15 +78,15 @@ const FeaturesGrid = () => {
         </div>
 
         {/* 4x2 Grid */}
-        <div className="grid grid-cols-4 gap-6 w-full">
+        <div className="grid grid-cols-4 gap-5 w-full">
           {features.map((feat) => {
             return (
               <div
                 key={feat.id}
-                className="group border rounded-[22px] p-6 text-left flex flex-col min-h-[250px] shadow-[0px_8px_32px_rgba(0,0,0,0.01)] transition-all duration-300 hover:scale-[1.02] bg-white border-[#E5E7EB] hover:bg-[#D2FBF4] hover:border-[#3CE0BF] hover:shadow-md"
+                className="w-[308px] group border rounded-[22px] p-6 flex flex-col h-[250px] shadow-[0px_8px_32px_rgba(0,0,0,0.01)] transition-all duration-300 hover:scale-[1.02] bg-white border-[#E5E7EB] hover:bg-[#D2FBF4] hover:border-[#3CE0BF] hover:shadow-md"
               >
                 {/* Icon */}
-                <div className="mb-6 w-[56px] h-[56px]">
+                <div className="mb-5 w-[56px] h-[56px]">
                   <Image
                     src={feat.iconPath}
                     alt={feat.title}

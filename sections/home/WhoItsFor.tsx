@@ -32,9 +32,9 @@ const WhoItsFor = () => {
   ];
 
   return (
-    <section id="why-us" className="relative w-full bg-white py-16 md:py-24 overflow-hidden">
+    <section id="why-us" className="relative w-full bg-white py-10 md:py-24 overflow-hidden">
       {/* ================= DESKTOP VIEW ================= */}
-      <div className="hidden md:block mx-auto max-w-[1128px] px-0">
+      <div className="hidden md:block mx-auto max-w-[1340px] px-24">
         <div className="grid grid-cols-3 gap-10">
           
           {/* Top Left: Wide Green Card (spans 2 columns) */}
@@ -104,6 +104,7 @@ const WhoItsFor = () => {
         </div>
       </div>
 
+      {/* ================= MOBILE VIEW ================= */}
       <div className="md:hidden px-5 flex flex-col gap-6">
         {/* Top Green Card */}
         <div className="bg-[#004944] rounded-[22px] p-8 flex flex-col gap-8 shadow-[0px_13px_100px_0px_#c7c7c740]">
@@ -135,10 +136,10 @@ const WhoItsFor = () => {
               />
             </div>
             <div className="flex flex-col gap-2">
-              <h3 className="font-manrope font-bold text-[24px] leading-tight text-[#0B2E2E]">
+              <h3 className="font-manrope font-bold text-[20px] leading-tight text-[#0B2E2E]">
                 {card.title}
               </h3>
-              <p className="font-poppins font-normal text-[14px] leading-[150%] tracking-[0px] text-gray-500">
+              <p className="font-poppins font-normal text-[13px] leading-[150%] tracking-[0px] text-gray-500">
                 {card.description}
               </p>
             </div>

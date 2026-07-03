@@ -107,7 +107,7 @@ const ModulesSection = () => {
           </h2>
 
           {/* Subtitle */}
-          <p className="font-poppins font-normal text-[18px] leading-[28px] text-gray-500 max-w-[800px]">
+          <p className="font-poppins font-normal text-[18px] leading-[28px] text-[#757575] max-w-[800px]">
             Each one takes a corner of the business, puts its financial implication in front of you in money and plain words, and tells you what to do. These are GIL's working modules.
           </p>
         </div>
@@ -144,9 +144,9 @@ const ModulesSection = () => {
             {(() => {
               const currentIdx = activeIdx ?? 0;
               return (
-                <div className="bg-[#D2FBF4] rounded-[24px] p-6 lg:p-8 w-full max-w-[820px] transition-all duration-300 shadow-[0px_4px_24px_rgba(0,0,0,0.03)]">
+                <div className="bg-[#D2FBF4] rounded-[24px] p-6 lg:p-6 w-full max-w-[845px] transition-all duration-300 shadow-[0px_4px_24px_rgba(0,0,0,0.03) max-h-[732px]">
                   {/* Illustration Image Box */}
-                  <div className="relative w-full aspect-[4/3] rounded-[16px] overflow-hidden mb-8 shadow-[0px_2px_12px_rgba(0,0,0,0.04)]">
+                  <div className="relative w-full aspect-[4/3] rounded-[16px] overflow-hidden mb-8 shadow-[0px_2px_12px_rgba(0,0,0,0.04)] w-[800px] h-[533px]">
                     <Image
                       src={MODULES_DATA[currentIdx].image}
                       alt={MODULES_DATA[currentIdx].title}
@@ -157,11 +157,11 @@ const ModulesSection = () => {
                   </div>
 
                   {/* Text copy */}
-                  <div className="flex flex-col gap-3">
-                    <h3 className="font-manrope font-bold text-[28px] leading-[36px] text-[#0B2E2E]">
+                  <div className="flex flex-col gap-3 pl-4">
+                    <h3 className="font-manrope font-bold text-[28px] leading-[36px] text-[#000000]">
                       {MODULES_DATA[currentIdx].title}
                     </h3>
-                    <p className="font-poppins font-normal text-[16px] leading-[24px] text-[#0B2E2E]/80">
+                    <p className="font-poppins font-medium text-[16px] leading-[24px] text-[#000000] w-[768px] mb-4">
                       {MODULES_DATA[currentIdx].description}
                     </p>
                   </div>
@@ -186,12 +186,12 @@ const ModulesSection = () => {
           </div>
 
           {/* Headline */}
-          <h2 className="font-manrope font-bold text-[28px] leading-[36px] tracking-tight text-[#0B2E2E] mb-4">
+          <h2 className="font-manrope font-bold text-[28px] leading-[36px] tracking-tight text-[#004944] mb-4">
             Every module turns your numbers into a decision.
           </h2>
 
           {/* Subtitle */}
-          <p className="font-poppins font-normal text-[14px] leading-[22px] text-gray-500">
+          <p className="font-poppins font-normal text-[14px] leading-[22px] text-[#757575]">
             Each one takes a corner of the business, puts its financial implication in front of you in money and plain words, and tells you what to do. These are GIL's working modules.
           </p>
         </div>
@@ -234,10 +234,10 @@ const ModulesSection = () => {
                     </div>
                     {/* Title & Desc */}
                     <div className="flex flex-col gap-2">
-                      <h4 className="font-manrope font-bold text-[18px] leading-tight text-[#0B2E2E]">
+                      <h4 className="font-manrope font-bold text-[18px] leading-tight text-[#000000]">
                         {mod.title}
                       </h4>
-                      <p className="font-poppins text-[13px] leading-[20px] text-[#0B2E2E]/80">
+                      <p className="font-poppins text-[13px] leading-[20px] text-[#000000]">
                         {mod.description}
                       </p>
                     </div>

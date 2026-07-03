@@ -86,7 +86,7 @@ const PayForItself = () => {
         <div className="px-1">
           {/* Badge */}
           <div className="mb-6">
-            <span className="rounded-[31px] border border-[#3CE0BF] inline-flex items-center justify-center px-4 h-[38px] font-poppins font-medium text-[14px] leading-[100%] tracking-[0px] text-[#3CE0BF] bg-transparent whitespace-nowrap">
+            <span className="rounded-[31px] border border-[#3CE0BF] inline-flex items-center justify-center px-2 h-[38px] font-poppins font-medium text-[13px] leading-[100%] tracking-[0px] text-[#3CE0BF] bg-transparent whitespace-nowrap">
               Does it pay for itself?
             </span>
           </div>

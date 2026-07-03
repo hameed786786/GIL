@@ -102,7 +102,18 @@ const Hero = () => {
 
   return (
     <>
-      <section className="relative w-full overflow-hidden px-4 py-8 sm:px-6 lg:px-8">
+      <section className="relative w-full overflow-hidden px-4 py-5 md:py-24 sm:px-6 lg:px-8 isolate">
+      {/* Background botbg image */}
+      <div className="pointer-events-none absolute bottom-0 left-0 right-0 w-full h-full -z-20">
+        <Image
+          src="/home/botbg.png"
+          alt=""
+          fill
+          className="object-contain object-top"
+          priority
+        />
+      </div>
+
       {/* Background grid pattern */}
       <div
         className="pointer-events-none absolute inset-0 -z-10 opacity-40"

@@ -6,7 +6,32 @@ import Image from "next/image";
 
 const Hero = () => {
   return (
-    <section className="relative w-full overflow-hidden px-4 py-12 md:py-0  md:h-[350px] lg:px-8 flex flex-col justify-center items-center">
+    <section className="relative w-full overflow-hidden px-4 py-12 md:py-0  md:h-[350px] lg:px-8 flex flex-col justify-center items-center isolate">
+      {/* Background botbg image */}
+      <div className="pointer-events-none absolute bottom-0 left-0 right-0 w-full h-full -z-20">
+        <Image
+          src="/home/botbg.png"
+          alt=""
+          fill
+          className="object-contain object-top"
+          priority
+        />
+      </div>
+
+      {/* Background grid pattern */}
+      <div
+        className="pointer-events-none absolute inset-0 -z-10 opacity-40"
+        style={{
+          backgroundImage: `
+            linear-gradient(to right, rgba(60, 224, 191, 0.15) 1px, transparent 1px),
+            linear-gradient(to bottom, rgba(60, 224, 191, 0.15) 1px, transparent 1px)
+          `,
+          backgroundSize: '48px 48px',
+          maskImage: 'radial-gradient(circle at center, black 60%, transparent 100%)',
+          WebkitMaskImage: 'radial-gradient(circle at center, black 60%, transparent 100%)',
+        }}
+      />
+
       {/* Side Grids constrained to Features Hero height (Desktop only) */}
       <div className="hidden md:block pointer-events-none absolute top-0 left-0 w-[70px] z-10 select-none -scale-x-100">
         <Image
