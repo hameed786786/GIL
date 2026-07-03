@@ -100,7 +100,7 @@ const CheckIcon = ({ highlighted }: { highlighted: boolean }) => (
 
 const PricingSection = () => {
   return (
-    <section className="relative w-full bg-white py-16 md:py-20 md:pt-5">
+    <section className="relative w-full bg-white  md:py-20 md:pt-5">
       {/* ================= DESKTOP VIEW ================= */}
       <div className="hidden md:block mx-auto max-w-[1280px] px-8">
         {/* Section Heading */}

@@ -116,11 +116,11 @@ const HowItWorks = () => {
         <div className="flex flex-col gap-16">
           {/* Step 1 */}
           <div className="flex flex-col items-center text-center gap-3">
-            <div className="w-[62px] h-[62px] flex-shrink-0 flex items-center justify-center bg-white rounded-[12px] border border-gray-100 shadow-[0px_1px_7px_0px_rgba(0,0,0,0.16)]">
-              <Image src="/home/icon1.svg" alt="Read" width={38} height={38} className="object-contain" />
+            <div className="w-[52px] h-[52px] flex-shrink-0 flex items-center justify-center bg-white rounded-[12px] border border-gray-100 shadow-[0px_1px_7px_0px_rgba(0,0,0,0.16)]">
+              <Image src="/home/icon1.svg" alt="Read" width={32} height={32} className="object-contain" />
             </div>
             <div className="flex flex-col gap-[5px]">
-              <span className="font-poppins font-bold text-[11px] tracking-[0.08em] text-[#3CE0BF] uppercase">Read</span>
+              <span className="font-poppins font-bold text-[11px] tracking-[0.08em] text-[#3CE0BF] uppercase mb-1">Read</span>
               <h3 className="font-manrope font-bold text-[18px] leading-[23px] text-[#0B2E2E]">Reads your data</h3>
               <p className="font-poppins text-[13px] leading-[20px] text-gray-500 max-w-[300px] mx-auto">
                 Any file or export from any accounting system. GIL reads it and works out your numbers. Nothing to migrate.
@@ -130,11 +130,11 @@ const HowItWorks = () => {
 
           {/* Step 2 */}
           <div className="flex flex-col items-center text-center gap-3">
-            <div className="w-[62px] h-[62px] flex-shrink-0 flex items-center justify-center bg-white rounded-[12px] border border-gray-100 shadow-[0px_1px_7px_0px_rgba(0,0,0,0.16)]">
-              <Image src="/home/icon2.svg" alt="Understand" width={38} height={38} className="object-contain" />
+            <div className="w-[52px] h-[52px] flex-shrink-0 flex items-center justify-center bg-white rounded-[12px] border border-gray-100 shadow-[0px_1px_7px_0px_rgba(0,0,0,0.16)]">
+              <Image src="/home/icon2.svg" alt="Understand" width={32} height={32} className="object-contain" />
             </div>
             <div className="flex flex-col gap-[5px]">
-              <span className="font-poppins font-bold text-[11px] tracking-[0.08em] text-[#3CE0BF] uppercase">Understand</span>
+              <span className="font-poppins font-bold text-[11px] tracking-[0.08em] text-[#3CE0BF] uppercase mb-1">Understand</span>
               <h3 className="font-manrope font-bold text-[18px] leading-[23px] text-[#0B2E2E]">Puts money on it</h3>
               <p className="font-poppins text-[13px] leading-[20px] text-gray-500 max-w-[300px] mx-auto">
                 It puts a money figure on everything where your money goes, where it is being lost, what each issue is costing and says what that means in plain words.
@@ -144,11 +144,11 @@ const HowItWorks = () => {
 
           {/* Step 3 */}
           <div className="flex flex-col items-center text-center gap-3">
-            <div className="w-[62px] h-[62px] flex-shrink-0 flex items-center justify-center bg-white rounded-[12px] border border-gray-100 shadow-[0px_1px_7px_0px_rgba(0,0,0,0.16)]">
-              <Image src="/home/icon3.svg" alt="Decide" width={38} height={38} className="object-contain" />
+            <div className="w-[52px] h-[52px] flex-shrink-0 flex items-center justify-center bg-white rounded-[12px] border border-gray-100 shadow-[0px_1px_7px_0px_rgba(0,0,0,0.16)]">
+              <Image src="/home/icon3.svg" alt="Decide" width={32} height={32} className="object-contain" />
             </div>
             <div className="flex flex-col gap-[5px]">
-              <span className="font-poppins font-bold text-[11px] tracking-[0.08em] text-[#3CE0BF] uppercase">Decide</span>
+              <span className="font-poppins font-bold text-[11px] tracking-[0.08em] text-[#3CE0BF] uppercase mb-1">Decide</span>
               <h3 className="font-manrope font-bold text-[18px] leading-[23px] text-[#0B2E2E]">Shows the right call</h3>
               <p className="font-poppins text-[13px] leading-[20px] text-gray-500 max-w-[300px] mx-auto">
                 For every choice in front of you, GIL shows the financial implication of each option and the call it would make. You decide with the numbers in hand.
@@ -158,11 +158,11 @@ const HowItWorks = () => {
 
           {/* Step 4 */}
           <div className="flex flex-col items-center text-center gap-3">
-            <div className="w-[62px] h-[62px] flex-shrink-0 flex items-center justify-center bg-white rounded-[12px] border border-gray-100 shadow-[0px_1px_7px_0px_rgba(0,0,0,0.16)]">
-              <Image src="/home/icon4.svg" alt="See the result" width={38} height={38} className="object-contain" />
+            <div className="w-[52px] h-[52px] flex-shrink-0 flex items-center justify-center bg-white rounded-[12px] border border-gray-100 shadow-[0px_1px_7px_0px_rgba(0,0,0,0.16)]">
+              <Image src="/home/icon4.svg" alt="See the result" width={32} height={32} className="object-contain" />
             </div>
             <div className="flex flex-col gap-[5px]">
-              <span className="font-poppins font-bold text-[11px] tracking-[0.08em] text-[#3CE0BF] uppercase">See the result</span>
+              <span className="font-poppins font-bold text-[11px] tracking-[0.08em] text-[#3CE0BF] uppercase mb-1">See the result</span>
               <h3 className="font-manrope font-bold text-[18px] leading-[23px] text-[#0B2E2E]">Proves the value</h3>
               <p className="font-poppins text-[13px] leading-[20px] text-gray-500 max-w-[300px] mx-auto">
                 GIL measures what the decision was worth, so the value is something you can see, not something you assume.

@@ -147,7 +147,7 @@ const PricingSection = () => {
               className="bg-white border border-[#D9D9D9] rounded-[22px] p-6 text-left flex flex-col shadow-[0px_13px_100px_0px_#c7c7c740]"
             >
               {/* Icon Container */}
-              <div className="w-[60px] h-[60px] rounded-[12px] border border-[#E5E7EB] flex items-center justify-center bg-[#F9FAFB] mb-4">
+              <div className="w-[50px] h-[50px] rounded-[12px] border border-[#E5E7EB] flex items-center justify-center bg-[#F9FAFB] mb-4">
                 <Image
                   src={card.icon}
                   alt=""

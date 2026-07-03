@@ -21,7 +21,7 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="w-full px-4 py-3 md:px-[70px] sm:px-6 lg:px-[70px]">
+    <header className="sticky top-0 z-50 w-full px-4 py-3 md:px-[70px] sm:px-6 lg:px-[70px] ">
       <div className="relative mx-auto w-full">
 
         {/* ================= MOBILE ================= */}
