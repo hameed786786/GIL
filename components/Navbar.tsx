@@ -78,7 +78,7 @@ const Navbar = () => {
                   Log In
                 </a>
                 <a
-                  href="#demo"
+                  href="/contact"
                   className="w-full rounded-full border border-[#004944]/30 bg-[#3CE0BF] px-5 py-2 text-center text-[15.9px] font-medium text-gray-900 shadow-sm hover:bg-emerald-500 transition-colors duration-150"
                 >
                   Book a Demo
@@ -128,7 +128,7 @@ const Navbar = () => {
               Log In
             </a>
             <a
-              href="#demo"
+              href="/contact"
               className="flex items-center justify-center w-[135px] h-[44px] gap-[10px] rounded-full border border-[#004944]/30 bg-[#3CE0BF] px-[18px] py-[12px] text-[15.9px] font-medium text-gray-900 shadow-sm transition-colors duration-150 hover:bg-emerald-500 whitespace-nowrap cursor-pointer"
             >
               Book a Demo

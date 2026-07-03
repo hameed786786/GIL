@@ -234,7 +234,7 @@ const PricingSection = () => {
               {/* Most Popular Badge */}
               {plan.badge && (
                 <div className="absolute -top-[17px] left-1/2 -translate-x-1/2 z-10">
-                  <span className="bg-[#004944] border border-white text-white font-poppins font-bold text-[12px] px-4 py-[6px] rounded-full inline-block whitespace-nowrap">
+                  <span className="bg-[#004944] border-5 border-white text-white font-poppins font-bold text-[12px] px-4 py-[6px] rounded-full inline-block whitespace-nowrap">
                     {plan.badge}
                   </span>
                 </div>

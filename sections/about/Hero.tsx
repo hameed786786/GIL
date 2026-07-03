@@ -67,7 +67,7 @@ const Hero = () => {
         {/* CTAs */}
         <div className="mt-8 flex flex-wrap justify-center gap-4">
           <Link
-            href="/#demo"
+            href="/contact"
             className="flex items-center justify-center w-[178px] h-[54px] gap-[10px] rounded-[40px] bg-[#3CE0BF] px-[24px] py-[13px] text-[18px] sm:text-[20.5px] font-medium leading-none text-[#0B2E2E] transition-colors duration-150 hover:bg-emerald-500 whitespace-nowrap shadow-sm cursor-pointer"
           >
             Book a Demo
@@ -96,7 +96,7 @@ const Hero = () => {
         {/* CTAs */}
         <div className="mt-6 flex justify-center gap-3">
           <Link
-            href="/#demo"
+            href="/contact"
             className="rounded-full bg-[#3CE0BF] px-5 py-2 text-xs font-semibold text-[#0B2E2E] hover:bg-emerald-500 whitespace-nowrap cursor-pointer"
           >
             Book a Demo
