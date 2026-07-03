@@ -20,4 +20,8 @@
   animation: fadeInUp 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+
 
