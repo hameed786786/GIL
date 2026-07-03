@@ -103,12 +103,12 @@ const HowItWorks = () => {
         </div>
 
         {/* Headline */}
-        <h2 className="font-manrope text-[26px] font-bold leading-[34px] tracking-tight text-[#004944] mb-3">
+        <h2 className="font-manrope text-[20px] font-bold leading-[28px] tracking-tight text-[#004944] mb-3">
           From raw numbers, to the implication, to the decision.
         </h2>
 
         {/* Subtitle */}
-        <p className="font-poppins text-[14px] leading-[22px] text-gray-500 mb-10">
+        <p className="font-poppins text-[13px] leading-[21px] text-gray-500 mb-10">
           Drop in any file from any system. From there, GIL runs the same loop every month, on its own.
         </p>
 

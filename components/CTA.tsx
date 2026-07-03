@@ -58,21 +58,21 @@ const CTA: React.FC<CTAProps> = ({
       {/* ================= MOBILE VIEW ================= */}
       <div className="md:hidden flex flex-col items-center text-center px-5 relative z-10">
         {/* Headline */}
-        <h2 className="font-manrope font-medium text-[30px] leading-[38px] tracking-tight text-[#0B2E2E] mb-3 max-w-[300px]">
+        <h2 className="font-manrope font-medium text-[20px] leading-[28px] tracking-tight text-[#0B2E2E] mb-3 max-w-[300px]">
           {title}
         </h2>
 
         {/* Subtitle */}
-        <p className="font-poppins font-normal text-[15px] leading-[24px] text-[#0B2E2E]/80 mb-8 max-w-[340px]">
+        <p className="font-poppins font-normal text-[13px] leading-[21px] text-[#0B2E2E]/80 mb-8 max-w-[320px]">
           {subtitle}
         </p>
 
         {/* Buttons Group */}
-        <div className="flex flex-row gap-4.5 justify-center items-center">
+        <div className="flex flex-row gap-3 justify-center items-center">
           {/* Primary Button */}
           <button 
             onClick={primaryButtonOnClick}
-            className="bg-white text-[#0B2E2E] font-poppins font-medium text-[14.9px] leading-[100%] h-[35.209999084472656px] px-4 rounded-[6px] shadow-[0px_4px_12px_rgba(0,0,0,0.05)] hover:bg-gray-50 transition-colors duration-200 cursor-pointer"
+            className="bg-white text-[#0B2E2E] font-poppins font-medium text-[13px] leading-none h-[40px] px-5 rounded-[6px] shadow-[0px_4px_12px_rgba(0,0,0,0.05)] hover:bg-gray-50 transition-colors duration-200 cursor-pointer whitespace-nowrap"
           >
             {primaryButtonText}
           </button>
@@ -81,7 +81,7 @@ const CTA: React.FC<CTAProps> = ({
           {secondaryButtonText && (
             <button 
               onClick={secondaryButtonOnClick}
-              className="bg-[#2D2D2D] text-white font-poppins font-medium text-[14.9px] leading-[100%] h-[35.209999084472656px] px-4 rounded-[6px] shadow-[0px_4px_12px_rgba(0,0,0,0.05)] hover:bg-[#3F3F3F] transition-colors duration-200 cursor-pointer"
+              className="bg-[#2D2D2D] text-white font-poppins font-medium text-[13px] leading-none h-[40px] px-5 rounded-[6px] shadow-[0px_4px_12px_rgba(0,0,0,0.05)] hover:bg-[#3F3F3F] transition-colors duration-200 cursor-pointer whitespace-nowrap"
             >
               {secondaryButtonText}
             </button>
@@ -89,6 +89,7 @@ const CTA: React.FC<CTAProps> = ({
         </div>
       </div>
     </section>
+
   );
 };
 

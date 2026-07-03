@@ -34,7 +34,7 @@ const DeepDive = () => {
       
       {/* Section Title */}
       <div className="text-center mb-10 md:mb-24">
-        <h2 className="font-manrope font-bold text-[30px] md:text-[48px] leading-tight text-[#004944]">
+        <h2 className="font-manrope font-bold text-[20px] md:text-[48px] leading-tight text-[#004944]">
           Deep Dive
         </h2>
       </div>
@@ -174,10 +174,10 @@ const DeepDive = () => {
         {/* Row 1: Data Ingestion */}
         <div className="flex flex-col gap-6">
           <div className="flex flex-col gap-3 pl-1">
-            <h3 className="font-manrope font-bold text-[24px] leading-tight text-[#0B2E2E] tracking-tight">
+            <h3 className="font-manrope font-bold text-[20px] leading-tight text-[#0B2E2E] tracking-tight">
               Data Ingestion
             </h3>
-            <p className="font-poppins font-normal text-[14px] leading-[22px] text-[#000000]">
+            <p className="font-poppins font-normal text-[13px] leading-[21px] text-[#000000]">
               Upload exports from ERP, CRM, HRMS, Finance Systems, or spreadsheets. GIL automatically understands columns, remembers mappings, and reduces manual effort.
             </p>
           </div>
@@ -210,10 +210,10 @@ const DeepDive = () => {
         {/* Row 2: Leakage Intelligence */}
         <div className="flex flex-col gap-6">
           <div className="flex flex-col gap-3 pl-1">
-            <h3 className="font-manrope font-bold text-[24px] leading-tight text-[#0B2E2E] tracking-tight">
+            <h3 className="font-manrope font-bold text-[20px] leading-tight text-[#0B2E2E] tracking-tight">
               Leakage Intelligence
             </h3>
-            <p className="font-poppins font-normal text-[14px] leading-[22px] text-[#000000]">
+            <p className="font-poppins font-normal text-[13px] leading-[21px] text-[#000000]">
               Identify financial leakage across workforce, operations, revenue, vendors, compliance, and working capital.
             </p>
           </div>
@@ -246,10 +246,10 @@ const DeepDive = () => {
         {/* Row 3: Governance Scoring */}
         <div className="flex flex-col gap-6">
           <div className="flex flex-col gap-3 pl-1">
-            <h3 className="font-manrope font-bold text-[24px] leading-tight text-[#0B2E2E] tracking-tight">
+            <h3 className="font-manrope font-bold text-[20px] leading-tight text-[#0B2E2E] tracking-tight">
               Governance Scoring
             </h3>
-            <p className="font-poppins font-normal text-[14px] leading-[22px] text-[#000000]">
+            <p className="font-poppins font-normal text-[13px] leading-[21px] text-[#000000]">
               Track governance performance using measurable scores that reveal risk, stability, and confidence in your data.
             </p>
           </div>

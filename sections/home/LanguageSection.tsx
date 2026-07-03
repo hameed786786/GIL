@@ -62,12 +62,12 @@ const LanguageSection = () => {
         </div>
 
         {/* Headline */}
-        <h2 className="font-manrope font-bold text-[28px] leading-[36px] tracking-tight text-white mb-4">
+        <h2 className="font-manrope font-bold text-[20px] leading-[28px] tracking-tight text-white mb-4">
           Clear language, in your language.
         </h2>
 
         {/* Subtitle */}
-        <p className="font-poppins font-normal text-[14px] leading-[22px] text-white/90 mb-8">
+        <p className="font-poppins font-normal text-[13px] leading-[21px] text-white/90 mb-8">
           GIL explains everything in plain, everyday language rather than financial terminology, and works in the language you operate in. You do not need a finance background, a dashboard habit, or a spare hour.
         </p>
 

@@ -100,10 +100,10 @@ const WhyChooseUs = () => {
       <div className="md:hidden px-5 flex flex-col items-center">
         {/* Section Header */}
         <div className="text-center mb-10 max-w-[340px] flex flex-col gap-3">
-          <h2 className="font-manrope font-bold text-[24px] leading-[36px] text-[#004944]">
+          <h2 className="font-manrope font-bold text-[20px] leading-[36px] text-[#004944]">
             Why finance and operations leaders choose GIL
           </h2>
-          <p className="font-poppins font-normal text-[14px] leading-[22px] text-gray-500">
+          <p className="font-poppins font-normal text-[13px] leading-[22px] text-gray-500">
             Built for organizations that need clarity, accountability, and measurable business outcomes.
           </p>
         </div>

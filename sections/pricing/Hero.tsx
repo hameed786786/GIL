@@ -6,7 +6,7 @@ import Image from "next/image";
 
 const Hero = () => {
   return (
-    <section className="relative w-full overflow-hidden px-4 py-12 md:py-0 pt-5 md:h-[350px] lg:px-8 flex flex-col justify-center items-center isolate">
+    <section className="relative w-full overflow-hidden px-4 py-12 md:py-0 md:h-[350px] lg:px-8 flex flex-col justify-center items-center isolate">
       {/* Background botbg image */}
       <div className="pointer-events-none absolute bottom-0 left-0 right-0 w-full h-full -z-20">
         <Image
@@ -56,12 +56,12 @@ const Hero = () => {
       <div className="hidden md:flex mx-auto max-w-[1165px] text-center flex-col items-center justify-center relative z-20">
         {/* Heading */}
         <h1 className="font-manrope text-4xl sm:text-5xl lg:text-6xl xl:text-[64px] font-bold leading-tight xl:leading-[88px] xl:tracking-[-1.6px] text-[#004944] max-w-[1152px]">
-          Stop guessing where the money goes.
+          Three plans. One source of truth.
         </h1>
 
         {/* Subheading */}
-        <p className="mt-6 font-manrope text-base text-[18px] font-medium leading-relaxed sm:leading-[36px] text-gray-500 max-w-[1002px]">
-          GIL turns the financial, people, sales and operational data you already produce into a continuously-scored picture of where your business is leaking money — and how stable it really is.
+        <p className="mt-6 font-poppins text-base text-[18px] font-medium leading-relaxed sm:leading-[36px] text-gray-500 max-w-[1002px]">
+          Start by seeing the numbers, move up to act on them, then to govern the whole business. Every plan shares the same auditable engine.
         </p>
 
         {/* CTAs */}
@@ -85,12 +85,12 @@ const Hero = () => {
       <div className="md:hidden flex flex-col items-center justify-center text-center relative z-20 px-4 w-full">
         {/* Heading */}
         <h1 className="text-center text-[20px] font-bold leading-snug text-[#004944] max-w-[300px] mx-auto">
-          Stop guessing where the money goes.
+          Three plans. One source of truth.
         </h1>
 
         {/* Subheading */}
         <p className="mx-auto mt-4 max-w-sm text-center text-[13px] leading-relaxed text-gray-500">
-          GIL turns the financial, people, sales and operational data you already produce into a continuously-scored picture of where your business is leaking money — and how stable it really is.
+          Start by seeing the numbers, move up to act on them, then to govern the whole business. Every plan shares the same auditable engine.
         </p>
 
         {/* CTAs */}

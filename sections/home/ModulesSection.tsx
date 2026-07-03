@@ -186,12 +186,12 @@ const ModulesSection = () => {
           </div>
 
           {/* Headline */}
-          <h2 className="font-manrope font-bold text-[28px] leading-[36px] tracking-tight text-[#004944] mb-4">
+          <h2 className="font-manrope font-bold text-[20px] leading-[28px] tracking-tight text-[#004944] mb-4">
             Every module turns your numbers into a decision.
           </h2>
 
           {/* Subtitle */}
-          <p className="font-poppins font-normal text-[14px] leading-[22px] text-[#757575]">
+          <p className="font-poppins font-normal text-[13px] leading-[21px] text-[#757575]">
             Each one takes a corner of the business, puts its financial implication in front of you in money and plain words, and tells you what to do. These are GIL's working modules.
           </p>
         </div>

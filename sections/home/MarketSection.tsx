@@ -69,12 +69,12 @@ const MarketSection = () => {
         </div>
 
         {/* Headline */}
-        <h2 className="font-manrope font-medium text-[28px] leading-[36px] tracking-tight text-[#004944] mb-4">
+        <h2 className="font-manrope font-medium text-[20px] leading-[28px] tracking-tight text-[#004944] mb-4">
           Local rules, your currency, your language.
         </h2>
 
         {/* Subtitle */}
-        <p className="font-poppins font-normal text-[14px] leading-[22px] text-[#757575] mb-8">
+        <p className="font-poppins font-normal text-[13px] leading-[21px] text-[#757575] mb-8">
           GIL reads the tax and statutory rules of the country you operate in, reports in your own currency, and speaks your language — so the same product serves a business in Bengaluru, Dubai, Singapore or London without a separate build.
         </p>
 

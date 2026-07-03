@@ -61,7 +61,7 @@ const TrustedTeams = () => {
       {/* ================= MOBILE VIEW ================= */}
       <div className="md:hidden px-5 flex flex-col items-center">
         {/* Section Header */}
-        <h2 className="font-manrope font-semibold text-[26px] leading-[34px] text-[#004944] text-center mb-8 max-w-[340px]">
+        <h2 className="font-manrope font-semibold text-[20px] leading-[28px] text-[#004944] text-center mb-8 max-w-[340px]">
           Trusted by teams focused on governance and performance
         </h2>
 

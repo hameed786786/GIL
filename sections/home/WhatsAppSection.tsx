@@ -68,16 +68,16 @@ const WhatsAppSection = () => {
           </div>
 
           {/* Headline */}
-          <h2 className="font-manrope font-bold text-[28px] leading-[36px] tracking-tight text-white">
+          <h2 className="font-manrope font-bold text-[20px] leading-[28px] tracking-tight text-white">
             Your business, on WhatsApp.
           </h2>
 
           {/* Body Copy */}
           <div className="flex flex-col gap-4">
-            <p className="font-poppins font-normal text-[14px] leading-[22px] text-white/90">
+            <p className="font-poppins font-normal text-[13px] leading-[21px] text-white/90">
               Ask anything in plain words — where am I losing money, will I have cash next month, what should I fix first — and WIL answers in money, drawn straight from your numbers.
             </p>
-            <p className="font-poppins font-normal text-[14px] leading-[22px] text-white/90">
+            <p className="font-poppins font-normal text-[13px] leading-[21px] text-white/90">
               Every Monday morning it sends a short brief without being asked: your score, your biggest leaks, and your top three actions. The place you already check is the place GIL meets you.
             </p>
           </div>

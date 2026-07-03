@@ -92,12 +92,12 @@ const PayForItself = () => {
           </div>
 
           {/* Headline */}
-          <h2 className="font-manrope font-bold text-[28px] leading-[36px] tracking-tight text-[#004944] mb-4">
+          <h2 className="font-manrope font-bold text-[20px] leading-[28px] tracking-tight text-[#004944] mb-4">
             The money it finds is money you keep.
           </h2>
 
           {/* Body */}
-          <p className="font-poppins font-normal text-[14px] leading-[22px] text-gray-500">
+          <p className="font-poppins font-normal text-[13px] leading-[21px] text-gray-500">
             GIL records every recommendation, whether it was acted on, and the result. The Recovery Score is the share of identified losses you have actually put back in the business — the single number that shows it has paid for itself many times over. At year end, it is all on one page.
           </p>
         </div>

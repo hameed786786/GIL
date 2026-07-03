@@ -114,10 +114,10 @@ const WhoItsFor = () => {
             </span>
           </div>
           <div className="flex flex-col gap-3">
-            <h2 className="font-manrope font-bold text-[26px] leading-[34px] text-white">
+            <h2 className="font-manrope font-bold text-[20px] leading-[28px] text-white">
               Made for the people who carry the numbers.
             </h2>
-            <p className="font-poppins font-normal text-[14px] leading-[22px] text-white/80">
+            <p className="font-poppins font-normal text-[13px] leading-[21px] text-white/80">
               One system, read differently by everyone who depends on it.
             </p>
           </div>
@@ -126,12 +126,12 @@ const WhoItsFor = () => {
         {/* Role Cards */}
         {cards.map((card) => (
           <div key={card.id} className="bg-[#F5F6F6] border border-[#D9D9D9] rounded-[22px] p-6 flex flex-col gap-6 shadow-[0px_13px_100px_0px_#c7c7c740]">
-            <div className="w-[64px] h-[64px] relative">
+            <div className="w-[44px] h-[44px] relative">
               <Image 
                 src={card.icon} 
                 alt="" 
-                width={64} 
-                height={64} 
+                width={44} 
+                height={44} 
                 className="object-contain"
               />
             </div>

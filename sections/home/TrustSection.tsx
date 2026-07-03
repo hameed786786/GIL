@@ -62,12 +62,12 @@ const TrustSection = () => {
         </div>
 
         {/* Headline */}
-        <h2 className="font-manrope font-bold text-[28px] leading-[36px] tracking-tight text-[#0B2E2E] mb-4">
+        <h2 className="font-manrope font-bold text-[20px] leading-[28px] tracking-tight text-[#0B2E2E] mb-4">
           Nothing is made up.
         </h2>
 
         {/* Subtitle */}
-        <p className="font-poppins font-normal text-[14px] leading-[22px] text-gray-500">
+        <p className="font-poppins font-normal text-[13px] leading-[21px] text-gray-500">
           Every figure GIL shows traces back to your source data, and when it cannot work something out with confidence, it tells you so rather than guessing. The numbers you decide on are numbers you can stand behind.
         </p>
       </div>

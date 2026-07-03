@@ -115,10 +115,10 @@ const FeaturesGrid = () => {
       <div className="md:hidden w-full px-5 flex flex-col items-center">
         {/* Title & Subtitle */}
         <div className="text-center mb-10 max-w-[340px]">
-          <h2 className="font-manrope font-bold text-[28px] leading-[36px] text-[#004944]">
+          <h2 className="font-manrope font-bold text-[20px] leading-[28px] text-[#004944]">
             Features
           </h2>
-          <p className="mt-3 font-poppins text-[14px] leading-[22px] text-[#757575]">
+          <p className="mt-3 font-poppins text-[13px] leading-[21px] text-[#757575]">
             Each module is purpose-built to close the gap between operational data and financial accountability.
           </p>
         </div>

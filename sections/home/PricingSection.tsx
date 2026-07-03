@@ -130,12 +130,12 @@ const PricingSection = () => {
         </div>
 
         {/* Headline */}
-        <h2 className="font-manrope font-medium text-[28px] leading-[36px] tracking-tight text-white mb-4">
+        <h2 className="font-manrope font-medium text-[20px] leading-[28px] tracking-tight text-white mb-4">
           Priced to your stage, not to your features.
         </h2>
 
         {/* Subtitle */}
-        <p className="font-poppins font-normal text-[14px] leading-[22px] text-white/80 mb-8">
+        <p className="font-poppins font-normal text-[13px] leading-[21px] text-white/80 mb-8">
           Every business gets the full intelligence engine. What changes is the depth, which grows naturally as your data builds. GIL is useful from the first month and becomes more so as it learns your business.
         </p>
 
