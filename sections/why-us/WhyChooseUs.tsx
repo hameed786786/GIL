@@ -70,7 +70,7 @@ const WhyChooseUs = () => {
           {CARDS.map((card) => (
             <div 
               key={card.id}
-              className="group border border-[#E5E7EB] rounded-[24px] p-8 flex flex-col text-left bg-white shadow-[0px_8px_32px_rgba(0,0,0,0.01)] transition-colors duration-300 hover:bg-[#D2FBF4] hover:border-[#3CE0BF]"
+              className="group border border-[#E5E7EB] rounded-[24px] p-8 flex flex-col text-left bg-white shadow-[0px_8px_32px_rgba(0,0,0,0.01)] transition-all duration-300 hover:scale-[1.02] hover:shadow-md hover:bg-[#D2FBF4] hover:border-[#3CE0BF]"
             >
               {/* Icon */}
               <div className="mb-6 w-[56px] h-[56px] relative">
@@ -113,7 +113,7 @@ const WhyChooseUs = () => {
           {CARDS.map((card) => (
             <div 
               key={card.id}
-              className="group border border-[#E5E7EB] rounded-[20px] p-5 flex flex-col text-left bg-white shadow-[0px_6px_20px_rgba(0,0,0,0.01)] transition-colors duration-300 hover:bg-[#D2FBF4] hover:border-[#3CE0BF]"
+              className="group border border-[#E5E7EB] rounded-[20px] p-5 flex flex-col text-left bg-white shadow-[0px_6px_20px_rgba(0,0,0,0.01)] transition-all duration-300 hover:scale-[1.02] hover:shadow-md hover:bg-[#D2FBF4] hover:border-[#3CE0BF]"
             >
               {/* Icon */}
               <div className="mb-4 w-[48px] h-[48px] relative">

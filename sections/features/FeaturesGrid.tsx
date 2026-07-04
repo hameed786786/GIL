@@ -83,7 +83,7 @@ const FeaturesGrid = () => {
             return (
               <div
                 key={feat.id}
-                className="w-[308px] group border rounded-[22px] p-6 flex flex-col h-[250px] shadow-[0px_8px_32px_rgba(0,0,0,0.01)] transition-colors duration-300 bg-white border-[#E5E7EB] hover:bg-[#D2FBF4] hover:border-[#3CE0BF]"
+                className="w-[308px] group border rounded-[22px] p-6 flex flex-col h-[250px] shadow-[0px_8px_32px_rgba(0,0,0,0.01)] transition-all duration-300 hover:scale-[1.02] hover:shadow-md bg-white border-[#E5E7EB] hover:bg-[#D2FBF4] hover:border-[#3CE0BF]"
               >
                 {/* Icon */}
                 <div className="mb-5 w-[56px] h-[56px]">

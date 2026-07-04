@@ -83,7 +83,7 @@ const PricingSection = () => {
           {cards.map((card) => (
             <div
               key={card.id}
-              className="group bg-white border border-[#D9D9D9] rounded-[22px] p-6 text-left flex flex-col justify-between h-[295px] shadow-[0px_13px_100px_0px_#c7c7c740] transition-colors duration-300 hover:bg-[#D2FBF4] hover:border-[#3CE0BF]"
+              className="group bg-white border border-[#D9D9D9] rounded-[22px] p-6 text-left flex flex-col justify-between h-[295px] shadow-[0px_13px_100px_0px_#c7c7c740] transition-all duration-300 hover:scale-[1.02] hover:shadow-lg hover:bg-[#D2FBF4] hover:border-[#3CE0BF]"
             >
               {/* Icon Container */}
               <div className="w-[88px] h-[88px] rounded-[14px] border border-[#E5E7EB] flex items-center justify-center bg-[#F9FAFB] mb-1 transition-colors duration-300 group-hover:bg-white/50 group-hover:border-[#3CE0BF]">
@@ -144,7 +144,7 @@ const PricingSection = () => {
           {cards.map((card) => (
             <div
               key={card.id}
-              className="group bg-white border border-[#D9D9D9] rounded-[22px] p-6 text-left flex flex-col shadow-[0px_13px_100px_0px_#c7c7c740] transition-colors duration-300 hover:bg-[#D2FBF4] hover:border-[#3CE0BF]"
+              className="group bg-white border border-[#D9D9D9] rounded-[22px] p-6 text-left flex flex-col shadow-[0px_13px_100px_0px_#c7c7c740] transition-all duration-300 hover:scale-[1.02] hover:shadow-lg hover:bg-[#D2FBF4] hover:border-[#3CE0BF]"
             >
               {/* Icon Container */}
               <div className="w-[50px] h-[50px] rounded-[12px] border border-[#E5E7EB] flex items-center justify-center bg-[#F9FAFB] mb-4 transition-colors duration-300 group-hover:bg-white/50 group-hover:border-[#3CE0BF]">
