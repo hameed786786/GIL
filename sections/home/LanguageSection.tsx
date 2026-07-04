@@ -6,12 +6,12 @@ import Image from "next/image";
 const LanguageSection = () => {
   const languages = [
     { label: "English", lang: "en" },
-    { label: "हिन्दी", lang: "hi" },
-    { label: "العربية", lang: "ar" },
-    { label: "中文", lang: "zh" },
-    { label: "日本語", lang: "ja" },
-    { label: "Français", lang: "fr" },
-    { label: "Español", lang: "es" },
+    { label: "αñ╣αñ┐αñ¿αÑìαñªαÑÇ", lang: "hi" },
+    { label: "╪º┘ä╪╣╪▒╪¿┘è╪⌐", lang: "ar" },
+    { label: "Σ╕¡µûç", lang: "zh" },
+    { label: "µùÑµ£¼Φ¬₧", lang: "ja" },
+    { label: "Fran├ºais", lang: "fr" },
+    { label: "Espa├▒ol", lang: "es" },
     { label: "Bahasa", lang: "id" }
   ];
 

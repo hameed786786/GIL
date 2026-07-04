@@ -9,7 +9,7 @@ const WhoItsFor = () => {
       id: "owners",
       icon: "/home/icon9.svg",
       title: "Business owners",
-      description: "One clear number and a short list of what to fix first — delivered where you already work."
+      description: "One clear number and a short list of what to fix first ΓÇö delivered where you already work."
     },
     {
       id: "cfos",
@@ -21,7 +21,7 @@ const WhoItsFor = () => {
       id: "teams",
       icon: "/home/icon11.svg",
       title: "Finance teams",
-      description: "Upload quickly and see at once what went wrong and what needs attention — no reports to build from scratch."
+      description: "Upload quickly and see at once what went wrong and what needs attention ΓÇö no reports to build from scratch."
     },
     {
       id: "accountants",

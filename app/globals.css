@@ -25,4 +25,12 @@
   display: none;
 }
 
+/* Recolors SVG icons to brand teal #004944 on hover */
+.group:hover .icon-hover-teal {
+  filter: brightness(0) saturate(100%) invert(19%) sepia(82%) saturate(673%) hue-rotate(152deg) brightness(94%);
+  transition: filter 0.3s ease;
+}
+.icon-hover-teal {
+  transition: filter 0.3s ease;
+}
 

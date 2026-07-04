@@ -30,7 +30,7 @@ const MarketSection = () => {
 
         {/* Subtitle */}
         <p className="font-poppins font-normal text-[20px] leading-[30px] text-[#757575] max-w-[898px] mx-auto mb-12">
-          GIL reads the tax and statutory rules of the country you operate in, reports in your own currency, and speaks your language — so the same product serves a business in Bengaluru, Dubai, Singapore or London without a separate build.
+          GIL reads the tax and statutory rules of the country you operate in, reports in your own currency, and speaks your language ΓÇö so the same product serves a business in Bengaluru, Dubai, Singapore or London without a separate build.
         </p>
 
         {/* Markets list */}
@@ -75,7 +75,7 @@ const MarketSection = () => {
 
         {/* Subtitle */}
         <p className="font-poppins font-normal text-[13px] leading-[21px] text-[#757575] mb-8">
-          GIL reads the tax and statutory rules of the country you operate in, reports in your own currency, and speaks your language — so the same product serves a business in Bengaluru, Dubai, Singapore or London without a separate build.
+          GIL reads the tax and statutory rules of the country you operate in, reports in your own currency, and speaks your language ΓÇö so the same product serves a business in Bengaluru, Dubai, Singapore or London without a separate build.
         </p>
 
         {/* Markets Grid */}

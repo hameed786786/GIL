@@ -17,12 +17,12 @@ const metrics = [
   {
     icon: "/home/icon7.svg",
     label: "Recovery Score",
-    value: "23% → 71%",
+    value: "23% ΓåÆ 71%",
   },
   {
     icon: "/home/icon8.svg",
     label: "Business getting stronger",
-    value: "48 → 71",
+    value: "48 ΓåÆ 71",
   },
 ];
 
@@ -30,7 +30,7 @@ const PayForItself = () => {
   return (
     <section className="relative w-full bg-white overflow-hidden">
       {/* ================= DESKTOP ================= */}
-      {/* Badge — outside two-column container */}
+      {/* Badge ΓÇö outside two-column container */}
       <div className="hidden md:block mx-auto max-w-[1400px] px-8 xl:px-16 pt-24">
         <span className="rounded-[31px] border border-[#3CE0BF] inline-flex items-center justify-center px-4 h-[38px] font-poppins font-medium text-[16px] leading-[100%] tracking-[0px] text-[#3CE0BF] bg-transparent whitespace-nowrap">
           Does it pay for itself?
@@ -48,16 +48,16 @@ const PayForItself = () => {
 
           {/* Body */}
           <p className="font-poppins font-normal text-[20px] leading-[150%] tracking-[-0.17px] text-gray-500 w-[463px] h-[180px]">
-            GIL records every recommendation, whether it was acted on, and the result. The Recovery Score is the share of identified losses you have actually put back in the business — the single number that shows it has paid for itself many times over. At year end, it is all on one page.
+            GIL records every recommendation, whether it was acted on, and the result. The Recovery Score is the share of identified losses you have actually put back in the business ΓÇö the single number that shows it has paid for itself many times over. At year end, it is all on one page.
           </p>
         </div>
 
-        {/* Right Column — Dark Card */}
+        {/* Right Column ΓÇö Dark Card */}
         <div className="shrink-0">
           <div className="bg-[#0B3B38] rounded-[16px] p-8 text-white w-[737px] h-[361px] flex flex-col justify-center">
             {/* Card Title */}
             <p className="font-poppins font-normal text-[16px] leading-[24px] text-white/70 mb-6">
-              Year in review — illustrative
+              Year in review ΓÇö illustrative
             </p>
 
             {/* Metrics */}
@@ -98,7 +98,7 @@ const PayForItself = () => {
 
           {/* Body */}
           <p className="font-poppins font-normal text-[13px] leading-[21px] text-gray-500">
-            GIL records every recommendation, whether it was acted on, and the result. The Recovery Score is the share of identified losses you have actually put back in the business — the single number that shows it has paid for itself many times over. At year end, it is all on one page.
+            GIL records every recommendation, whether it was acted on, and the result. The Recovery Score is the share of identified losses you have actually put back in the business ΓÇö the single number that shows it has paid for itself many times over. At year end, it is all on one page.
           </p>
         </div>
 
@@ -106,7 +106,7 @@ const PayForItself = () => {
         <div className="bg-[#0B3B38] rounded-[20px] p-6 text-white w-full">
           {/* Card Title */}
           <p className="font-poppins font-normal text-[13px] leading-[20px] text-white/70 mb-4">
-            Year in review — illustrative
+            Year in review ΓÇö illustrative
           </p>
 
           {/* Metrics */}

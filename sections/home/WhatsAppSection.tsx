@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import React from "react";
 import Image from "next/image";
@@ -18,7 +18,7 @@ const WhatsAppSection = () => {
             {/* Badge */}
             <div>
               <span className="rounded-[31px] border border-[#3CE0BF] inline-flex items-center justify-center px-4 h-[38px] font-poppins font-medium text-[16px] leading-[100%] tracking-[0px] text-[#3CE0BF] bg-transparent whitespace-nowrap">
-                WIL · the WhatsApp Intelligence Layer
+                WIL ┬╖ the WhatsApp Intelligence Layer
               </span>
             </div>
 
@@ -29,7 +29,7 @@ const WhatsAppSection = () => {
 
             {/* Paragraph 1 */}
             <p className="font-poppins font-normal text-[20px] leading-[26px] text-white/95 w-[755px] ">
-              Ask anything in plain words — where am I losing money, will I have cash next month, what should I fix first — and WIL answers in money, drawn straight from your numbers.
+              Ask anything in plain words ΓÇö where am I losing money, will I have cash next month, what should I fix first ΓÇö and WIL answers in money, drawn straight from your numbers.
             </p>
 
             {/* Paragraph 2 */}
@@ -63,7 +63,7 @@ const WhatsAppSection = () => {
           {/* Badge */}
           <div className="w-fit">
             <span className="rounded-[31px] border border-[#3CE0BF] inline-flex items-center justify-center px-4.5 h-[34px] font-poppins font-medium text-[13px] leading-[100%] tracking-[0px] text-[#3CE0BF] bg-transparent whitespace-nowrap">
-              WIL · WhatsApp Layer
+              WIL ┬╖ WhatsApp Layer
             </span>
           </div>
 
@@ -75,7 +75,7 @@ const WhatsAppSection = () => {
           {/* Body Copy */}
           <div className="flex flex-col gap-4">
             <p className="font-poppins font-normal text-[13px] leading-[21px] text-white/90">
-              Ask anything in plain words — where am I losing money, will I have cash next month, what should I fix first — and WIL answers in money, drawn straight from your numbers.
+              Ask anything in plain words ΓÇö where am I losing money, will I have cash next month, what should I fix first ΓÇö and WIL answers in money, drawn straight from your numbers.
             </p>
             <p className="font-poppins font-normal text-[13px] leading-[21px] text-white/90">
               Every Monday morning it sends a short brief without being asked: your score, your biggest leaks, and your top three actions. The place you already check is the place GIL meets you.
