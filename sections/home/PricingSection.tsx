@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 
 const PricingSection = () => {
-  const [activeMobileIdx, setActiveMobileIdx] = useState<number | null>(0);
+  const [activeMobileIdx, setActiveMobileIdx] = useState<number | null>(null);
   const cards = [
     {
       id: "establishing",

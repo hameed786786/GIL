@@ -50,7 +50,7 @@ const CARDS: ChooseUsCard[] = [
 ];
 
 const WhyChooseUs = () => {
-  const [activeMobileIdx, setActiveMobileIdx] = useState<number | null>(0);
+  const [activeMobileIdx, setActiveMobileIdx] = useState<number | null>(null);
   return (
     <section className="relative w-full bg-white py-12 pt-0 md:pt-0 md:py-24 overflow-hidden">
       

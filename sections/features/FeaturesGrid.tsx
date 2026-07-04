@@ -11,7 +11,7 @@ interface FeatureCard {
 }
 
 const FeaturesGrid = () => {
-  const [activeMobileIdx, setActiveMobileIdx] = useState<number | null>(0);
+  const [activeMobileIdx, setActiveMobileIdx] = useState<number | null>(null);
   const features: FeatureCard[] = [
     {
       id: "data-ingestion",
