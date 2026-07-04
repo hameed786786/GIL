@@ -75,7 +75,7 @@ const CTA: React.FC<CTAProps> = ({
         </h2>
 
         {/* Subtitle */}
-        <p className="font-poppins font-normal text-[13px] leading-[21px] text-[#0B2E2E]/80 mb-8 max-w-[320px]">
+        <p className="font-poppins font-normal text-[14px] leading-[21px] text-[#0B2E2E]/80 mb-8 max-w-[320px]">
           {subtitle}
         </p>
 

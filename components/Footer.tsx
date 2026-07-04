@@ -59,7 +59,7 @@ const Footer = () => {
               className="object-contain"
             />
           </div>
-          <span className="font-manrope font-bold text-[22px] text-[#004944] tracking-wide">
+          <span className="font-manrope font-bold text-[20px] text-[#004944] tracking-wide">
             GIL
           </span>
         </div>

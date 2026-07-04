@@ -115,7 +115,7 @@ const PricingSection = () => {
         </div>
 
         {/* Footnote */}
-        <p className="font-poppins font-medium text-[13px] leading-[22px] text-white/80 max-w-[928px] mx-auto mt-2 tracking-[0.3]">
+        <p className="font-poppins font-medium text-[13px] leading-[22px] text-white max-w-[928px] mx-auto mt-2 tracking-[0.3]">
           The full engine — the money view, the decisions, the statutory watch, the board pack and WIL — is there from the first edition. Higher tiers add reach and depth, not basics.
         </p>
       </div>
@@ -176,7 +176,7 @@ const PricingSection = () => {
         </div>
 
         {/* Footnote */}
-        <p className="font-poppins font-normal text-[12px] leading-[18px] text-white/70">
+        <p className="font-poppins font-normal text-[12px] leading-[18px] text-white">
           The full engine — the money view, the decisions, the statutory watch, the board pack and WIL — is there from the first edition. Higher tiers add reach and depth, not basics.
         </p>
       </div>

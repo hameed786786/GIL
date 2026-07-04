@@ -3,6 +3,7 @@
 @theme {
   --font-manrope: var(--font-manrope), sans-serif;
   --font-poppins: var(--font-poppins), sans-serif;
+  --font-outfit: var(--font-outfit), sans-serif;
 }
 
 @keyframes fadeInUp {

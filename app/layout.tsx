@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Manrope, Poppins } from "next/font/google";
+import { Inter, Manrope, Poppins, Outfit } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -19,6 +19,12 @@ const poppins = Poppins({
   subsets: ["latin"],
   weight: ["400"],
   variable: "--font-poppins",
+  display: "swap",
+});
+
+const outfit = Outfit({
+  subsets: ["latin"],
+  variable: "--font-outfit",
   display: "swap",
 });
 
@@ -126,7 +132,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${inter.className} ${manrope.variable} ${poppins.variable} h-full antialiased`}
+      className={`${inter.className} ${manrope.variable} ${poppins.variable} ${outfit.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col relative overflow-x-hidden">
         {/* Background Side Grids */}

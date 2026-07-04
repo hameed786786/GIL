@@ -72,7 +72,7 @@ const Navbar = () => {
 
               <div className="flex flex-col gap-3 border-t border-gray-100 pt-4">
                 <a
-                  href="#login"
+                  href="https://gil-admin-panel.vercel.app/login"
                   className="w-full rounded-full border border-gray-300 bg-white px-5 py-2 text-center text-[15.9px] font-medium text-gray-800 shadow-sm hover:bg-gray-50 hover:border-gray-400 transition-colors duration-150"
                 >
                   Log In
@@ -122,7 +122,7 @@ const Navbar = () => {
           {/* Right: Actions */}
           <div className="flex items-center gap-3">
             <a
-              href="#login"
+              href="https://gil-admin-panel.vercel.app/login"
               className="flex items-center justify-center w-[81.52px] h-[44.21px] rounded-full border border-gray-300 bg-white text-[15.9px] font-medium text-gray-800 shadow-sm transition-colors duration-150 hover:bg-gray-50 hover:border-gray-400 whitespace-nowrap cursor-pointer"
             >
               Log In
