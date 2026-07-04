@@ -140,10 +140,10 @@ const Hero = () => {
           </div>
 
           {/* Heading */}
-          <h1 className="text-center text-[20px] font-bold leading-snug text-[#004944]">
+          <h1 className="text-center text-[22px] font-bold leading-snug text-[#004944]">
             Your accounts tell you what happened.
           </h1>
-          <h1 className="mt-1 text-center text-[20px] font-bold leading-snug text-[#3CE0BF]">
+          <h1 className="mt-1 text-center text-[22px] font-bold leading-snug text-[#3CE0BF]">
             GIL tells you what to do next.
           </h1>
 
