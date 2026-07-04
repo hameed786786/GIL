@@ -84,12 +84,12 @@ const Hero = () => {
       {/* ================= MOBILE VIEW ================= */}
       <div className="md:hidden flex flex-col items-center justify-center text-center relative z-20 px-4 w-full">
         {/* Heading */}
-        <h1 className="text-center text-[20px] font-bold leading-snug text-[#004944] max-w-[300px] mx-auto">
+        <h1 className="text-center text-[24px] font-bold leading-snug text-[#004944] max-w-[300px] mx-auto">
           We help businesses see and stop what they're losing.
         </h1>
 
         {/* Subheading */}
-        <p className="mx-auto mt-4 max-w-sm text-center text-[13px] leading-relaxed text-gray-500">
+        <p className="mx-auto mt-4 max-w-sm text-center text-[14px] leading-relaxed text-gray-500">
           GIL was created to bring financial visibility, governance, and accountability together in one platform.
         </p>
 

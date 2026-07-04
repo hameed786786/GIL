@@ -70,7 +70,7 @@ const WhyChooseUs = () => {
           {CARDS.map((card) => (
             <div 
               key={card.id}
-              className="border border-[#E5E7EB] rounded-[24px] p-8 flex flex-col text-left bg-white shadow-[0px_8px_32px_rgba(0,0,0,0.01)] hover:shadow-md transition-all duration-300 hover:scale-[1.01]"
+              className="group border border-[#E5E7EB] rounded-[24px] p-8 flex flex-col text-left bg-white shadow-[0px_8px_32px_rgba(0,0,0,0.01)] transition-colors duration-300 hover:bg-[#D2FBF4] hover:border-[#3CE0BF]"
             >
               {/* Icon */}
               <div className="mb-6 w-[56px] h-[56px] relative">
@@ -78,17 +78,17 @@ const WhyChooseUs = () => {
                   src={card.icon}
                   alt={card.title}
                   fill
-                  className="object-contain"
+                  className="object-contain icon-hover-teal"
                 />
               </div>
 
               {/* Title */}
-              <h3 className="font-manrope font-semibold text-[20px] leading-tight mb-3 text-[#0B2E2E]">
+              <h3 className="font-manrope font-semibold text-[20px] leading-tight mb-3 text-[#0B2E2E] transition-colors duration-300 group-hover:text-[#004944]">
                 {card.title}
               </h3>
 
               {/* Description */}
-              <p className="font-poppins font-normal text-[13.5px] leading-relaxed text-gray-500">
+              <p className="font-poppins font-normal text-[13.5px] leading-relaxed text-gray-500 transition-colors duration-300 group-hover:text-[#004944]/80">
                 {card.description}
               </p>
             </div>
@@ -103,7 +103,7 @@ const WhyChooseUs = () => {
           <h2 className="font-manrope font-bold text-[20px] leading-[36px] text-[#004944]">
             Why finance and operations leaders choose GIL
           </h2>
-          <p className="font-poppins font-normal text-[13px] leading-[22px] text-gray-500">
+          <p className="font-poppins font-normal text-[14px] leading-[22px] text-gray-500">
             Built for organizations that need clarity, accountability, and measurable business outcomes.
           </p>
         </div>
@@ -113,7 +113,7 @@ const WhyChooseUs = () => {
           {CARDS.map((card) => (
             <div 
               key={card.id}
-              className="border border-[#E5E7EB] rounded-[20px] p-5 flex flex-col text-left bg-white shadow-[0px_6px_20px_rgba(0,0,0,0.01)]"
+              className="group border border-[#E5E7EB] rounded-[20px] p-5 flex flex-col text-left bg-white shadow-[0px_6px_20px_rgba(0,0,0,0.01)] transition-colors duration-300 hover:bg-[#D2FBF4] hover:border-[#3CE0BF]"
             >
               {/* Icon */}
               <div className="mb-4 w-[48px] h-[48px] relative">
@@ -121,17 +121,17 @@ const WhyChooseUs = () => {
                   src={card.icon}
                   alt={card.title}
                   fill
-                  className="object-contain"
+                  className="object-contain icon-hover-teal"
                 />
               </div>
 
               {/* Title */}
-              <h3 className="font-manrope font-bold text-[18px] leading-tight mb-2 text-[#0B2E2E]">
+              <h3 className="font-manrope font-bold text-[18px] leading-tight mb-2 text-[#0B2E2E] transition-colors duration-300 group-hover:text-[#004944]">
                 {card.title}
               </h3>
 
               {/* Description */}
-              <p className="font-poppins font-normal text-[13px] leading-relaxed text-gray-500">
+              <p className="font-poppins font-normal text-[14px] leading-relaxed text-gray-500 transition-colors duration-300 group-hover:text-[#004944]/80">
                 {card.description}
               </p>
             </div>

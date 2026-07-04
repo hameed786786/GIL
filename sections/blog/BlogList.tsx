@@ -49,29 +49,29 @@ const POSTS: BlogPost[] = [
 
 // Inline meta icons
 const UserIcon = () => (
-  <Image 
-    src="/blog/solar_user-bold-duotone.svg" 
-    alt="User" 
-    width={16} 
-    height={16} 
+  <Image
+    src="/blog/solar_user-bold-duotone.svg"
+    alt="User"
+    width={16}
+    height={16}
   />
 );
 
 const CalendarIcon = () => (
-  <Image 
-    src="/blog/solar_calendar-date-bold-duotone.svg" 
-    alt="Calendar" 
-    width={16} 
-    height={16} 
+  <Image
+    src="/blog/solar_calendar-date-bold-duotone.svg"
+    alt="Calendar"
+    width={16}
+    height={16}
   />
 );
 
 const ClockIcon = () => (
-  <Image 
-    src="/blog/solar_clock-circle-bold-duotone.svg" 
-    alt="Clock" 
-    width={16} 
-    height={16} 
+  <Image
+    src="/blog/solar_clock-circle-bold-duotone.svg"
+    alt="Clock"
+    width={16}
+    height={16}
   />
 );
 
@@ -81,8 +81,8 @@ const BlogList = () => {
 
   return (
     <section className="w-full bg-white py-16 md:py-24 pt-0 md:pt-5">
-      <div className=" max-w-[1440px] px-6 lg:px-18">
-        
+      <div className=" max-w-[1440px] px-6 lg:px-15">
+
         {/* ================= FEATURED POST (TOP) ================= */}
         <div className="grid grid-cols-1 lg:grid-cols-[807px_1fr] gap-8 lg:gap-12 items-center mb-8">
           {/* Featured Image */}
@@ -106,7 +106,7 @@ const BlogList = () => {
               </span>
 
               {/* Title */}
-              <h2 className="font-manrope font-bold text-[20px] md:text-[36px] leading-tight text-black mb-4">
+              <h2 className="font-manrope font-bold text-[20px] md:max-text-[34px] leading-tight text-black mb-4">
                 {featured.title}
               </h2>
 
@@ -122,8 +122,8 @@ const BlogList = () => {
                   { icon: <CalendarIcon />, label: featured.date },
                   { icon: <ClockIcon />, label: featured.readTime }
                 ].map((meta, i) => (
-                  <div 
-                    key={i} 
+                  <div
+                    key={i}
                     className="bg-[#F5F6F6] rounded-[4px] px-3.5 py-1.5 flex items-center gap-1.5 font-poppins font-medium text-[12px] text-[#757575]"
                   >
                     {meta.icon}
@@ -141,7 +141,7 @@ const BlogList = () => {
         </div>
 
         {/* ================= GRID POSTS (BOTTOM) ================= */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {gridPosts.map((post) => (
             <div key={post.id} className="flex flex-col items-start">
               {/* Image */}
@@ -161,7 +161,7 @@ const BlogList = () => {
               </span>
 
               {/* Title */}
-              <h3 className="font-manrope font-bold text-[20px] md:text-[36px] leading-tight text-black mb-3">
+              <h3 className="font-manrope font-bold text-[32px] leading-tight text-black mb-3">
                 {post.title}
               </h3>
 
@@ -177,8 +177,8 @@ const BlogList = () => {
                   { icon: <CalendarIcon />, label: post.date },
                   { icon: <ClockIcon />, label: post.readTime }
                 ].map((meta, i) => (
-                  <div 
-                    key={i} 
+                  <div
+                    key={i}
                     className="bg-[#F5F6F6] rounded-[4px] px-3.5 py-1.5 flex items-center gap-1.5 font-poppins font-medium text-[12px] text-[#757575]"
                   >
                     {meta.icon}

@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const Hero = () => {
   return (
-    <section className="relative w-full overflow-hidden px-4 py-15 pt-5 md:py-26 lg:px-8 flex flex-col justify-center items-center isolate">
+    <section className="relative w-full overflow-hidden px-4 py-10 pt-5 md:py-26 lg:px-8 flex flex-col justify-center items-center isolate">
       {/* Background botbg image */}
       <div className="pointer-events-none absolute bottom-0 left-0 right-0 w-full h-full -z-20">
         <Image
@@ -62,7 +62,7 @@ const Hero = () => {
       {/* ================= MOBILE VIEW ================= */}
       <div className="md:hidden flex flex-col items-center  text-center relative z-20 px-2 w-full">
         {/* Heading */}
-        <h1 className=" text-[20px] font-bold  text-[#004944] max-w-[300px] ">
+        <h1 className=" text-[24px] font-bold  text-[#004944] max-w-[320px] ">
           Governance you can prove,<br /> not just claim.
         </h1>
       </div>

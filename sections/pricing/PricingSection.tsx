@@ -220,9 +220,9 @@ const PricingSection = () => {
           Choose the stage that fits your governance journey.
         </h2>
 
-        {/* Cards Stack */}
+        {/* Cards Stack — Most Popular first on mobile */}
         <div className="flex flex-col gap-8">
-          {PLANS.map((plan) => (
+          {[...PLANS].sort((a, b) => (b.highlighted ? 1 : 0) - (a.highlighted ? 1 : 0)).map((plan) => (
             <div
               key={plan.id}
               className={`relative rounded-[20px] flex flex-col ${

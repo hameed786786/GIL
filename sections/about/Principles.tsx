@@ -19,17 +19,7 @@ const Principles = () => {
       </div>
 
       {/* Top curved ellipse image */}
-      <div className="absolute top-5 md:top-10 left-1/2 -translate-x-1/2 pointer-events-none z-0 select-none">
-        <div className="w-[300px] md:w-[680px] lg:w-[740px] aspect-[740/150] relative overflow-visible transform -translate-y-[48%]">
-          <Image
-            src="/about/Ellipse 4.svg"
-            alt=""
-            fill
-            className="object-cover"
-            priority
-          />
-        </div>
-      </div>
+
 
       {/* Side Grids (Desktop only) */}
       <div className="hidden md:block pointer-events-none absolute top-0 left-0 w-[70px] z-10 select-none -scale-x-100">
@@ -55,7 +45,7 @@ const Principles = () => {
       <div className="relative z-20 max-w-[1100px] mx-auto flex flex-col items-center">
         
         {/* ================= DESKTOP VIEW ================= */}
-        <div className="hidden md:flex flex-col items-center text-center pt-[180px]">
+        <div className="hidden md:flex flex-col items-center text-center pt-[40px]">
           {/* Heading */}
           <h2 className="font-manrope font-medium text-[48px] leading-tight tracking-[-0.5px] text-[#004944] mb-6 max-w-[800px]">
             Principles Behind Every Decision

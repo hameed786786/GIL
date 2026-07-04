@@ -62,7 +62,7 @@ const Hero = () => {
       {/* ================= MOBILE VIEW ================= */}
       <div className="md:hidden flex flex-col items-center justify-center text-center relative z-20 px-4 w-full">
         {/* Heading */}
-        <h1 className="text-center text-[20px] font-bold leading-snug text-[#004944] max-w-[300px] mx-auto">
+        <h1 className="text-center text-[24px] font-bold leading-snug text-[#004944] max-w-[350px]">
           Notes on governance, leakage and financial intelligence.
         </h1>
       </div>

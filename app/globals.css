@@ -25,12 +25,15 @@
   display: none;
 }
 
-/* Recolors SVG icons to brand teal #004944 on hover */
+/* Recolors SVG icons to brand teal #004944 on hover or active state */
 .group:hover .icon-hover-teal {
-  filter: brightness(0) saturate(100%) invert(19%) sepia(82%) saturate(673%) hue-rotate(152deg) brightness(94%);
+  filter: brightness(0) saturate(100%) invert(13%) sepia(100%) saturate(1958%) hue-rotate(160deg) brightness(106%) contrast(108%);
   transition: filter 0.3s ease;
 }
 .icon-hover-teal {
   transition: filter 0.3s ease;
+}
+.icon-active-teal {
+  filter: brightness(0) saturate(100%) invert(13%) sepia(100%) saturate(1958%) hue-rotate(160deg) brightness(106%) contrast(108%);
 }
 

@@ -83,31 +83,31 @@ const PricingSection = () => {
           {cards.map((card) => (
             <div
               key={card.id}
-              className="bg-white border border-[#D9D9D9] rounded-[22px] p-6 text-left flex flex-col justify-between h-[295px] shadow-[0px_13px_100px_0px_#c7c7c740]"
+              className="group bg-white border border-[#D9D9D9] rounded-[22px] p-6 text-left flex flex-col justify-between h-[295px] shadow-[0px_13px_100px_0px_#c7c7c740] transition-colors duration-300 hover:bg-[#D2FBF4] hover:border-[#3CE0BF]"
             >
               {/* Icon Container */}
-              <div className="w-[88px] h-[88px] rounded-[14px] border border-[#E5E7EB] flex items-center justify-center bg-[#F9FAFB] mb-1">
+              <div className="w-[88px] h-[88px] rounded-[14px] border border-[#E5E7EB] flex items-center justify-center bg-[#F9FAFB] mb-1 transition-colors duration-300 group-hover:bg-white/50 group-hover:border-[#3CE0BF]">
                 <Image
                   src={card.icon}
                   alt=""
                   width={56}
                   height={56}
-                  className="object-cover"
+                  className="object-cover icon-hover-teal"
                 />
               </div>
 
               {/* Tag */}
-              <span className="font-poppins font-medium text-[16px] text-[#3CE0BF] mb-2 block">
+              <span className="font-poppins font-medium text-[16px] text-[#3CE0BF] mb-2 block transition-colors duration-300 group-hover:text-[#004944]">
                 {card.tag}
               </span>
 
               {/* Title */}
-              <h3 className="font-manrope font-bold text-[24px] leading-tight text-[#0B2E2E] mb-3">
+              <h3 className="font-manrope font-bold text-[24px] leading-tight text-[#0B2E2E] mb-3 transition-colors duration-300 group-hover:text-[#004944]">
                 {card.title}
               </h3>
 
               {/* Description */}
-              <p className="font-poppins font-normal text-[14px] leading-[160%] text-[#757575] h-[63px] w-[370px]">
+              <p className="font-poppins font-normal text-[14px] leading-[160%] text-[#757575] h-[63px] w-[370px] transition-colors duration-300 group-hover:text-[#004944]/80">
                 {card.description}
               </p>
             </div>
@@ -144,31 +144,31 @@ const PricingSection = () => {
           {cards.map((card) => (
             <div
               key={card.id}
-              className="bg-white border border-[#D9D9D9] rounded-[22px] p-6 text-left flex flex-col shadow-[0px_13px_100px_0px_#c7c7c740]"
+              className="group bg-white border border-[#D9D9D9] rounded-[22px] p-6 text-left flex flex-col shadow-[0px_13px_100px_0px_#c7c7c740] transition-colors duration-300 hover:bg-[#D2FBF4] hover:border-[#3CE0BF]"
             >
               {/* Icon Container */}
-              <div className="w-[50px] h-[50px] rounded-[12px] border border-[#E5E7EB] flex items-center justify-center bg-[#F9FAFB] mb-4">
+              <div className="w-[50px] h-[50px] rounded-[12px] border border-[#E5E7EB] flex items-center justify-center bg-[#F9FAFB] mb-4 transition-colors duration-300 group-hover:bg-white/50 group-hover:border-[#3CE0BF]">
                 <Image
                   src={card.icon}
                   alt=""
                   width={32}
                   height={32}
-                  className="object-contain"
+                  className="object-contain icon-hover-teal"
                 />
               </div>
 
               {/* Tag */}
-              <span className="font-poppins font-medium text-[13px] text-[#3CE0BF] mb-1 block">
+              <span className="font-poppins font-medium text-[13px] text-[#3CE0BF] mb-1 block transition-colors duration-300 group-hover:text-[#004944]">
                 {card.tag}
               </span>
 
               {/* Title */}
-              <h3 className="font-manrope font-bold text-[20px] leading-tight text-[#0B2E2E] mb-2">
+              <h3 className="font-manrope font-bold text-[20px] leading-tight text-[#0B2E2E] mb-2 transition-colors duration-300 group-hover:text-[#004944]">
                 {card.title}
               </h3>
 
               {/* Description */}
-              <p className="font-poppins font-normal text-[13px] leading-[150%] text-gray-500">
+              <p className="font-poppins font-normal text-[13px] leading-[150%] text-gray-500 transition-colors duration-300 group-hover:text-[#004944]/80">
                 {card.description}
               </p>
             </div>

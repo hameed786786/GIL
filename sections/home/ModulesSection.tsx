@@ -85,9 +85,12 @@ const MODULES_DATA: ModuleData[] = [
 ];
 
 const ModulesSection = () => {
-  const [activeIdx, setActiveIdx] = useState<number>(0);
+  const [activeIdx, setActiveIdx] = useState<number | null>(0);
   const scrollTrackRef = useRef<HTMLDivElement>(null);
   const isClickScrolling = useRef<boolean>(false);
+
+  // Offset height config to clear your top navigation header bar cleanly
+  const stickyTopOffset = 110; 
 
   useEffect(() => {
     const handleScroll = () => {
@@ -95,12 +98,14 @@ const ModulesSection = () => {
 
       const rect = scrollTrackRef.current.getBoundingClientRect();
       const trackHeight = rect.height;
-      const scrolledPastTop = -rect.top;
-      const totalScrollableDistance = trackHeight - window.innerHeight;
+      
+      // Calculate scroll progress starting exactly when the workspace hits its sticky point
+      const scrolled = stickyTopOffset - rect.top;
+      const totalScrollableDistance = trackHeight - window.innerHeight + stickyTopOffset;
       
       if (totalScrollableDistance <= 0) return;
 
-      const currentProgress = Math.max(0, Math.min(1, scrolledPastTop / totalScrollableDistance));
+      const currentProgress = Math.max(0, Math.min(1, scrolled / totalScrollableDistance));
       const targetIndex = Math.min(
         Math.floor(currentProgress * MODULES_DATA.length),
         MODULES_DATA.length - 1
@@ -123,7 +128,7 @@ const ModulesSection = () => {
 
     const rect = scrollTrackRef.current.getBoundingClientRect();
     const currentScrollY = window.scrollY || document.documentElement.scrollTop;
-    const totalScrollableDistance = rect.height - window.innerHeight;
+    const totalScrollableDistance = scrollTrackRef.current.scrollHeight - window.innerHeight + stickyTopOffset;
 
     const absoluteTrackTop = rect.top + currentScrollY;
     const targetScrollPosition = absoluteTrackTop + (idx / (MODULES_DATA.length - 1)) * totalScrollableDistance;
@@ -142,53 +147,58 @@ const ModulesSection = () => {
     <section className="relative w-full bg-white py-6 md:py-24">
       
       {/* ================= DESKTOP VIEW ================= */}
-      <div 
-        ref={scrollTrackRef}
-        className="hidden md:block relative w-full"
-        style={{ height: `${MODULES_DATA.length * 100}vh` }}
-      >
-        {/* Sticky wrapper locks the view frame during scrolling transitions */}
-        <div className="sticky top-0 h-screen w-full flex flex-col justify-center overflow-hidden">
-          <div className="mx-auto max-w-[1280px] px-2 w-full">
-            
-            {/* Header Block */}
-            <div className="flex flex-col items-center text-center mb-16">
-              {/* Badge */}
-              <div className="mb-6">
-                <span className="rounded-[31px] border border-[#3CE0BF] inline-flex items-center justify-center px-4 h-[38px] font-poppins font-medium text-[20px] leading-[100%] tracking-[0px] text-[#3CE0BF] bg-transparent whitespace-nowrap w-[143px] h-[38px]">
-                  What it does
-                </span>
-              </div>
+      <div className="hidden md:block mx-auto max-w-[1280px] px-2 w-full">
+        
+        {/* Header Block: Left unchanged structurally, scrolls up naturally to create room */}
+        <div className="flex flex-col items-center text-center mb-16">
+          {/* Badge */}
+          <div className="mb-6">
+            <span className="rounded-[31px] border border-[#3CE0BF] inline-flex items-center justify-center px-4 h-[38px] font-poppins font-medium text-[20px] leading-[100%] tracking-[0px] text-[#3CE0BF] bg-transparent whitespace-nowrap w-[143px] h-[38px]">
+              What it does
+            </span>
+          </div>
 
-              {/* Headline */}
-              <h2 className="font-manrope font-bold text-[48px] leading-[58px] tracking-[-0.8px] text-[#004944] max-w-[850px] mb-6">
-                Every module turns your numbers into a decision.
-              </h2>
+          {/* Headline */}
+          <h2 className="font-manrope font-bold text-[48px] leading-[58px] tracking-[-0.8px] text-[#004944] max-w-[850px] mb-6">
+            Every module turns your numbers into a decision.
+          </h2>
 
-              {/* Subtitle */}
-              <p className="font-poppins font-normal text-[18px] leading-[28px] text-[#757575] max-w-[800px]">
-                Each one takes a corner of the business, puts its financial implication in front of you in money and plain words, and tells you what to do. These are GIL's working modules.
-              </p>
-            </div>
+          {/* Subtitle */}
+          <p className="font-poppins font-normal text-[18px] leading-[28px] text-[#757575] max-w-[800px]">
+            Each one takes a corner of the business, puts its financial implication in front of you in money and plain words, and tells you what to do. These are GIL's working modules.
+          </p>
+        </div>
 
-            {/* Interactive Layout (Sidebar + Content) */}
-            <div className="flex items-center gap-12 lg:gap-16">
+        {/* Interactive Scroll runway tailored exactly for the sidebar and display stack layout */}
+        <div 
+          ref={scrollTrackRef}
+          className="relative w-full"
+          style={{ height: `${MODULES_DATA.length * 90}vh` }}
+        >
+          {/* Sticky container */}
+          <div 
+            className="sticky w-full flex items-stretch"
+            style={{ 
+              top: `${stickyTopOffset}px`, 
+              height: `calc(100vh - ${stickyTopOffset + 20}px)` 
+            }}
+          >
+            <div className="w-full h-full flex items-center gap-12 lg:gap-16">
               
               {/* Sidebar Tabs */}
-              <div className="w-[404px] h-[566px] shrink-0 flex flex-col justify-between border-l border-gray-100">
+              <div className="w-[380px] shrink-0 flex flex-col justify-between border-l border-gray-100 self-center" style={{ height: '85%' }}>
                 {MODULES_DATA.map((mod, idx) => {
                   const isActive = idx === activeIdx;
                   return (
                     <button
                       key={mod.id}
                       onClick={() => handleTabClick(idx)}
-                      className={`relative py-4 pl-6 text-left transition-all duration-200 outline-none ${
+                      className={`relative py-3 pl-6 text-left transition-all duration-300 outline-none ${
                         isActive 
-                          ? "text-[#3CE0BF] font-manrope font-bold text-[24px] leading-[100%] tracking-[-0.17px]" 
-                          : "text-gray-400 font-manrope font-bold text-[24px] leading-[100%] tracking-[-0.17px] hover:text-gray-600"
+                          ? "text-[#3CE0BF] font-manrope font-bold text-[22px] leading-[100%] tracking-[-0.17px]" 
+                          : "text-gray-400 font-manrope font-bold text-[22px] leading-[100%] tracking-[-0.17px] hover:text-gray-600"
                       }`}
                     >
-                      {/* Left Active border indicator */}
                       {isActive && (
                         <span className="absolute left-[-1px] top-0 bottom-0 w-[2px] bg-[#3CE0BF]" />
                       )}
@@ -198,21 +208,20 @@ const ModulesSection = () => {
                 })}
               </div>
 
-              {/* Content Card Display */}
-              <div className="flex-1 relative max-w-[845px] h-[732px]">
-                {MODULES_DATA.map((mod, idx) => {
-                  const isActive = idx === activeIdx;
-                  return (
-                    <div
-                      key={mod.id}
-                      className={`absolute inset-0 bg-[#D2FBF4] rounded-[24px] p-6 lg:p-6 w-full max-w-[845px] max-h-[732px] transition-all duration-500 ease-in-out ${
-                        isActive 
-                          ? "opacity-100 translate-y-0 pointer-events-auto scale-100 z-10" 
-                          : "opacity-0 translate-y-4 pointer-events-none scale-[0.99] z-0"
-                      }`}
-                    >
-                      {/* Illustration Image Box */}
-                      <div className="relative w-full aspect-[4/3] rounded-[16px] overflow-hidden mb-8 shadow-[0px_2px_12px_rgba(0,0,0,0.04)] w-[800px] h-[533px]">
+              {/* Content Card Display — single fixed container, only image crossfades */}
+              <div className="flex-1 min-w-0 h-full bg-[#D2FBF4] rounded-[24px] p-6 flex flex-col">
+
+                {/* Image Area — all images stacked, only active one is visible */}
+                <div className="relative w-full flex-1 rounded-[16px] overflow-hidden mb-4 shadow-[0px_2px_12px_rgba(0,0,0,0.04)]">
+                  {MODULES_DATA.map((mod, idx) => {
+                    const isActive = idx === activeIdx;
+                    return (
+                      <div
+                        key={mod.id}
+                        className={`absolute inset-0 transition-opacity duration-500 ease-in-out ${
+                          isActive ? "opacity-100 z-10" : "opacity-0 z-0"
+                        }`}
+                      >
                         <Image
                           src={mod.image}
                           alt={mod.title}
@@ -221,19 +230,32 @@ const ModulesSection = () => {
                           priority={idx === 0}
                         />
                       </div>
+                    );
+                  })}
+                </div>
 
-                      {/* Text copy */}
-                      <div className="flex flex-col gap-3 pl-4">
+                {/* Text area — fixed height, crossfades title + description */}
+                <div className="relative shrink-0 h-[110px] pl-4">
+                  {MODULES_DATA.map((mod, idx) => {
+                    const isActive = idx === activeIdx;
+                    return (
+                      <div
+                        key={mod.id}
+                        className={`absolute inset-0 flex flex-col gap-3 transition-opacity duration-500 ease-in-out ${
+                          isActive ? "opacity-100 z-10" : "opacity-0 z-0"
+                        }`}
+                      >
                         <h3 className="font-manrope font-bold text-[28px] leading-[36px] text-[#000000]">
                           {mod.title}
                         </h3>
-                        <p className="font-poppins font-medium text-[16px] leading-[24px] text-[#000000] w-[768px] mb-4">
+                        <p className="font-poppins font-medium text-[16px] leading-[24px] text-[#000000] max-w-[768px]">
                           {mod.description}
                         </p>
                       </div>
-                    </div>
-                  );
-                })}
+                    );
+                  })}
+                </div>
+
               </div>
 
             </div>
@@ -277,14 +299,17 @@ const ModulesSection = () => {
               >
                 {/* Trigger Button */}
                 <button
-                  onClick={() => setActiveIdx(activeIdx === idx ? 0 : idx)}
+                  onClick={() => setActiveIdx(activeIdx === idx ? null : idx)}
                   className="w-full text-left py-4 px-5 flex items-center justify-between font-manrope font-bold text-[16px] text-[#0B2E2E]"
                 >
-                  <span className={isActive ? "text-[#0B2E2E]" : "text-gray-600"}>
+                  <span className={isActive ? "text-[#004944]" : "text-gray-600"}>
                     {mod.name}
                   </span>
-                  <span className={`text-[18px] transition-transform duration-200 ${isActive ? "rotate-90 text-[#3CE0BF]" : "text-gray-400"}`}>
-                    ▶
+                  {/* Chevron icon — rotates when open */}
+                  <span className={`flex items-center justify-center transition-transform duration-300 ${isActive ? "rotate-180" : "rotate-0"}`}>
+                    <svg width="18" height="18" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M2.5 5L7 9.5L11.5 5" stroke={isActive ? "#004944" : "#9CA3AF"} strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/>
+                    </svg>
                   </span>
                 </button>
 

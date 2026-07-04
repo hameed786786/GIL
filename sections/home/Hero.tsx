@@ -140,15 +140,15 @@ const Hero = () => {
           </div>
 
           {/* Heading */}
-          <h1 className="text-center text-[24px] font-bold leading-snug text-[#004944]">
+          <h1 className="text-center text-[20px] font-bold leading-snug text-[#004944]">
             Your accounts tell you what happened.
           </h1>
-          <h1 className="mt-1 text-center text-[24px] font-bold leading-snug text-[#3CE0BF]">
+          <h1 className="mt-1 text-center text-[20px] font-bold leading-snug text-[#3CE0BF]">
             GIL tells you what to do next.
           </h1>
 
           {/* Paragraph */}
-          <p className="mx-auto mt-4 max-w-sm text-center text-[14px] leading-relaxed text-gray-500">
+          <p className="mx-auto mt-4 max-w-sm text-center text-[13px] leading-relaxed text-gray-500">
             Every decision in business has a financial implication. GIL is the
             intelligence layer above your accounting system — each month it
             reads your numbers and shows you that implication, in money and
