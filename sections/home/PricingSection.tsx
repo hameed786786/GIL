@@ -1,9 +1,10 @@
 'use client';
 
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 
 const PricingSection = () => {
+  const [activeMobileIdx, setActiveMobileIdx] = useState<number | null>(0);
   const cards = [
     {
       id: "establishing",
@@ -141,38 +142,58 @@ const PricingSection = () => {
 
         {/* Cards */}
         <div className="flex flex-col gap-6 w-full mb-8">
-          {cards.map((card) => (
-            <div
-              key={card.id}
-              className="group bg-white border border-[#D9D9D9] rounded-[22px] p-6 text-left flex flex-col shadow-[0px_13px_100px_0px_#c7c7c740] transition-all duration-300 hover:scale-[1.02] hover:shadow-lg hover:bg-[#D2FBF4] hover:border-[#3CE0BF]"
-            >
-              {/* Icon Container */}
-              <div className="w-[50px] h-[50px] rounded-[12px] border border-[#E5E7EB] flex items-center justify-center bg-[#F9FAFB] mb-4 transition-colors duration-300 group-hover:bg-white/50 group-hover:border-[#3CE0BF]">
-                <Image
-                  src={card.icon}
-                  alt=""
-                  width={32}
-                  height={32}
-                  className="object-contain icon-hover-teal"
-                />
+          {cards.map((card, idx) => {
+            const isMobileActive = activeMobileIdx === idx;
+            return (
+              <div
+                key={card.id}
+                onClick={() => setActiveMobileIdx(activeMobileIdx === idx ? null : idx)}
+                className={`border rounded-[22px] p-6 text-left flex flex-col shadow-[0px_13px_100px_0px_#c7c7c740] transition-all duration-300 cursor-pointer active:scale-[0.98] ${
+                  isMobileActive
+                    ? "bg-[#D2FBF4] border-[#3CE0BF]"
+                    : "bg-white border-[#D9D9D9]"
+                }`}
+              >
+                {/* Icon Container */}
+                <div className={`w-[50px] h-[50px] rounded-[12px] border flex items-center justify-center mb-4 transition-colors duration-300 ${
+                  isMobileActive
+                    ? "bg-white/50 border-[#3CE0BF]"
+                    : "bg-[#F9FAFB] border-[#E5E7EB]"
+                }`}>
+                  <Image
+                    src={card.icon}
+                    alt=""
+                    width={32}
+                    height={32}
+                    className={`object-contain transition-all duration-300 ${
+                      isMobileActive ? "icon-active-teal" : "icon-hover-teal"
+                    }`}
+                  />
+                </div>
+
+                {/* Tag */}
+                <span className={`font-poppins font-medium text-[13px] mb-1 block transition-colors duration-300 ${
+                  isMobileActive ? "text-[#004944]" : "text-[#3CE0BF]"
+                }`}>
+                  {card.tag}
+                </span>
+
+                {/* Title */}
+                <h3 className={`font-manrope font-bold text-[20px] leading-tight mb-2 transition-colors duration-300 ${
+                  isMobileActive ? "text-[#004944]" : "text-[#0B2E2E]"
+                }`}>
+                  {card.title}
+                </h3>
+
+                {/* Description */}
+                <p className={`font-poppins font-normal text-[13px] leading-[150%] transition-colors duration-300 ${
+                  isMobileActive ? "text-[#004944]/80" : "text-gray-500"
+                }`}>
+                  {card.description}
+                </p>
               </div>
-
-              {/* Tag */}
-              <span className="font-poppins font-medium text-[13px] text-[#3CE0BF] mb-1 block transition-colors duration-300 group-hover:text-[#004944]">
-                {card.tag}
-              </span>
-
-              {/* Title */}
-              <h3 className="font-manrope font-bold text-[20px] leading-tight text-[#0B2E2E] mb-2 transition-colors duration-300 group-hover:text-[#004944]">
-                {card.title}
-              </h3>
-
-              {/* Description */}
-              <p className="font-poppins font-normal text-[13px] leading-[150%] text-gray-500 transition-colors duration-300 group-hover:text-[#004944]/80">
-                {card.description}
-              </p>
-            </div>
-          ))}
+            );
+          })}
         </div>
 
         {/* Footnote */}
