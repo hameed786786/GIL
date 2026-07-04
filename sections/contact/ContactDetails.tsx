@@ -105,7 +105,7 @@ const ContactDetails = () => {
             {/* WhatsApp CTA button */}
             <div className="mt-8">
               <a
-                href="https://wa.me/919953666374"
+                href="https://wa.me/91"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full h-[48px] rounded-[10px] bg-[#3CE0BF] hover:bg-[#32c9ab] text-gray-900 font-poppins font-semibold text-[14px] flex items-center justify-center transition-colors shadow-lg cursor-pointer"
@@ -197,7 +197,7 @@ const ContactDetails = () => {
             {/* WhatsApp CTA button */}
             <div className="mt-6">
               <a
-                href="https://wa.me/919953666374"
+                href="https://wa.me/91"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full h-[44px] rounded-[8px] bg-[#3CE0BF] hover:bg-[#32c9ab] text-gray-900 font-poppins font-bold text-[13.5px] flex items-center justify-center transition-colors shadow-md cursor-pointer"
